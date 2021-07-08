@@ -4,7 +4,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcaf5ad6-4ff4-477b-a3a9-0aa0c994e13f" name="Default Changelist" comment="" />
+    <list default="true" id="bcaf5ad6-4ff4-477b-a3a9-0aa0c994e13f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pages/AccountsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pages/ContactUsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pages/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pages/VNExHomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pages/VNExInternationalPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/factory/DriverFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/util/ConfigReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/util/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/util/ElementUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/util/ExcelReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failedRerun.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-07-07T18-40-03_890-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-07-07T18-40-03_890.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/extent-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/extent.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/AccountsPage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/AccountsPageSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/ApplicationHooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/ContactUsPage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/ContactUsPageSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/LoginPage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/LoginPageSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/MyTestNGFailedRerun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/MyTestNGRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/VNExHomePage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/VNExHomePageSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/VNExInternationalPage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parallel/VNExInternationalPageSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/SparkReport/Index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/embedded9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-1/not-found-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-2/PdfReport/ExtentPdf.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/chosen.override.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/formatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/jquery-3.5.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/vis.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/vis.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/vis.override.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -314,6 +376,17 @@
       <updated>1625306862924</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="parallel.MyTestNGRunner" time="82.452" tests="16" errors="0" skipped="3" failures="3">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\QUANNGUYEN\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\target\test-classes;D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\target\classes;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-java\6.9.0\cucumber-java-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-core\6.9.0\cucumber-core-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-gherkin\6.9.0\cucumber-gherkin-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.0\cucumber-gherkin-messages-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\messages\13.2.0\messages-13.2.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-plugin\6.9.0\cucumber-plugin-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\docstring\6.9.0\docstring-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-junit\6.9.0\cucumber-junit-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\QUANNGUYEN\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\QUANNGUYEN\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\QUANNGUYEN\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\github\bonigarcia\webdrivermanager\4.2.2\webdrivermanager-4.2.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\QUANNGUYEN\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.1\httpclient5-5.0.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.1\httpcore5-5.0.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.1\httpcore5-h2-5.0.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\QUANNGUYEN\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.8.2\extentreports-cucumber6-adapter-2.8.2.jar;C:\Users\QUANNGUYEN\.m2\repository\com\aventstack\extentreports\5.0.6\extentreports-5.0.6.jar;C:\Users\QUANNGUYEN\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\QUANNGUYEN\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\QUANNGUYEN\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\QUANNGUYEN\.m2\repository\tech\grasshopper\extent-pdf-report\1.7.2\extent-pdf-report-1.7.2.jar;C:\Users\QUANNGUYEN\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.2.3\cucumber-pdf-report-2.2.3.jar;C:\Users\QUANNGUYEN\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\QUANNGUYEN\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\QUANNGUYEN\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\QUANNGUYEN\.m2\repository\tech\grasshopper\table-layout\1.2.0\table-layout-1.2.0.jar;C:\Users\QUANNGUYEN\.m2\repository\com\aventstack\klov-reporter\5.0.6\klov-reporter-5.0.6.jar;C:\Users\QUANNGUYEN\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\QUANNGUYEN\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\QUANNGUYEN\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-testng\6.9.0\cucumber-testng-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\QUANNGUYEN\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\QUANNGUYEN\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\QUANNGUYEN\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\QUANNGUYEN\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\QUANNGUYEN\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\QUANNGUYEN\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\QUANNGUYEN\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\plugins\maven-clean-plugin\3.1.0\maven-clean-plugin-3.1.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.4\plexus-component-annotations-1.5.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\QUANNGUYEN\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\QUANNGUYEN\AppData\Local\Temp\surefire547833523982129862\surefirebooter3010079095596313658.jar C:\Users\QUANNGUYEN\AppData\Local\Temp\surefire547833523982129862 2021-07-08T16-30-52_719-jvmRun1 surefire8488319667306866466tmp surefire_01432118405570834500tmp"/>
+    <property name="surefire.test.class.path" value="D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\target\test-classes;D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\target\classes;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-java\6.9.0\cucumber-java-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-core\6.9.0\cucumber-core-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-gherkin\6.9.0\cucumber-gherkin-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.0\cucumber-gherkin-messages-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\messages\13.2.0\messages-13.2.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-plugin\6.9.0\cucumber-plugin-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\docstring\6.9.0\docstring-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-junit\6.9.0\cucumber-junit-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\QUANNGUYEN\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\QUANNGUYEN\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\QUANNGUYEN\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\QUANNGUYEN\.m2\repository\io\github\bonigarcia\webdrivermanager\4.2.2\webdrivermanager-4.2.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\QUANNGUYEN\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\QUANNGUYEN\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.1\httpclient5-5.0.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.1\httpcore5-5.0.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.1\httpcore5-h2-5.0.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\QUANNGUYEN\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.8.2\extentreports-cucumber6-adapter-2.8.2.jar;C:\Users\QUANNGUYEN\.m2\repository\com\aventstack\extentreports\5.0.6\extentreports-5.0.6.jar;C:\Users\QUANNGUYEN\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\QUANNGUYEN\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\QUANNGUYEN\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\QUANNGUYEN\.m2\repository\tech\grasshopper\extent-pdf-report\1.7.2\extent-pdf-report-1.7.2.jar;C:\Users\QUANNGUYEN\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.2.3\cucumber-pdf-report-2.2.3.jar;C:\Users\QUANNGUYEN\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\QUANNGUYEN\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\QUANNGUYEN\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\QUANNGUYEN\.m2\repository\tech\grasshopper\table-layout\1.2.0\table-layout-1.2.0.jar;C:\Users\QUANNGUYEN\.m2\repository\com\aventstack\klov-reporter\5.0.6\klov-reporter-5.0.6.jar;C:\Users\QUANNGUYEN\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\QUANNGUYEN\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\QUANNGUYEN\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\QUANNGUYEN\.m2\repository\io\cucumber\cucumber-testng\6.9.0\cucumber-testng-6.9.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\QUANNGUYEN\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\QUANNGUYEN\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\QUANNGUYEN\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\QUANNGUYEN\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\QUANNGUYEN\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\QUANNGUYEN\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\QUANNGUYEN\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\QUANNGUYEN\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\QUANNGUYEN\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\QUANNGUYEN\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\plugins\maven-clean-plugin\3.1.0\maven-clean-plugin-3.1.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\QUANNGUYEN\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.4\plexus-component-annotations-1.5.4.jar;C:\Users\QUANNGUYEN\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\QUANNGUYEN\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\QUANNGUYEN\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\QUANNGUYEN\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\QUANNGUYEN"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_261\jre"/>
+    <property name="basedir" value="D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\QUANNGUYEN\AppData\Local\Temp\surefire547833523982129862\surefirebooter3010079095596313658.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_261-b12"/>
+    <property name="user.name" value="QUANNGUYEN"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\QUANNGUYEN\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\QUANNG~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_261"/>
+    <property name="user.dir" value="D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\flutter\bin;C:\Program Files\Java\jdk-14.0.2\bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Java\jdk-14.0.2;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\QUANNGUYEN\AppData\Local\Android\Sdk\cmdline-tools\tools\bin;C:\Users\QUANNGUYEN\AppData\Local\Android\Sdk\platform-tools;C:\Users\QUANNGUYEN\AppData\Local\Android\Sdk\emulator;C:\Program Files\apache-maven-3.8.1\bin;C:\tools\ruby27\bin;C:\Users\QUANNGUYEN\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Roaming\npm;C:\Users\QUANNGUYEN\AppData\Local\Programs\Microsoft VS Code\bin;C:\flutter\bin;C:\Users\QUANNGUYEN\AppData\Local\GitHubDesktop\bin;C:\tools\dart-sdk\bin;C:\Users\QUANNGUYEN\AppData\Roaming\Pub\Cache\bin;C:\Users\QUANNGUYEN\AppData\Local\Android\Sdk\tools\bin;C:\Users\QUANNGUYEN\AppData\Local\Pub\Cache\bin;C:\flutter\.pub-cache\bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\QUANNGUYEN\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.261-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Accounts section count&quot;, &quot;Optional[Account page feature]&quot;](1)" classname="parallel.MyTestNGRunner" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+    <system-out><![CDATA[
+@Login @Smoke @skip_scenario
+Scenario: Forgot Password link                  # src/test/resources/parallel/LoginPage.feature:11
+
+@contactUs
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUsPage.feature:16
+
+@contactUs
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUsPage.feature:14
+
+@accounts @skip_scenario
+Scenario: Accounts section count                  # src/test/resources/parallel/AccountsPage.feature:15
+
+@Login @Smoke
+Scenario: Login page title                     # src/test/resources/parallel/LoginPage.feature:5
+
+@contactUs
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUsPage.feature:15
+
+@contactUs
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUsPage.feature:12
+
+@contactUs
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUsPage.feature:17
+
+@contactUs
+Scenario Outline: Contact Us scenario with different set of data                            # src/test/resources/parallel/ContactUsPage.feature:13
+
+SKIPPED SCENARIOS: Accounts section count
+@accounts
+Scenario: Accounts page title                       # src/test/resources/parallel/AccountsPage.feature:9
+SKIPPED SCENARIOS: Forgot Password link
+      org.junit.AssumptionViolatedException: got: <false>, expected: is <true>
+	at org.junit.Assume.assumeThat(Assume.java:106)
+	at org.junit.Assume.assumeTrue(Assume.java:50)
+	at parallel.ApplicationHooks.skipScenario(ApplicationHooks.java:27)
+
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+      org.junit.AssumptionViolatedException: got: <false>, expected: is <true>
+	at org.junit.Assume.assumeThat(Assume.java:106)
+	at org.junit.Assume.assumeTrue(Assume.java:50)
+	at parallel.ApplicationHooks.skipScenario(ApplicationHooks.java:27)
+
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+Browser value is: chrome
+  Given user has already logged in to application # parallel.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)
+  Given user is on Accounts page                  # parallel.AccountsPageSteps.user_is_on_accounts_page()
+  Then user gets accounts section                 # parallel.AccountsPageSteps.user_gets_accounts_section(io.cucumber.datatable.DataTable)
+  And accounts section count should be 6          # parallel.AccountsPageSteps.accounts_section_count_should_be(java.lang.Integer)
+  Given user is on login page                   # parallel.LoginPageSteps.user_is_on_login_page()
+  Then forgot password link should be displayed # parallel.LoginPageSteps.forgot_password_link_should_be_displayed()
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 12203
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 91.0.4472.S10t1a r(taifn5g2 aC9h0rbofm8e7D0r3i0vded1r5 29314.806.a41c4d732a.e10215 c(5adf7562ca99b0-brfe8f7s0/3b0rdadn15c2h3-4h8e6aad1sc/d434a7e22@5{c#51d47662c}9)b -orne fps/obrrantc h3-8h5e8a2ds
+/O44n7l2@y {lo#c1a4l6 2c}o)n noenc tpioornts  3a1r4e7 0al
+lOonwleyd .loc
+aPll ecaosnnee cstieones  hartet pasl:l/o/wcehdSr.otm
+ePadlrreiatvseeir n.scegeh  rChohrmoitummte.poDrsgr:/s/ie/cvucerhirtry o-9cm1on.es0di.d4rer4ia7vt2ieo.rn1.s c0fho1rr  o(smuagifgue5smt2.iaoon9sr0 gobn/ fks8eee7pci0nu3gr 0iCdhtrdoy1m5e-Dc2roi3n4v8se6irad 1secardf3ea.ate
+i25co5nds7 6cf9ob-rr efssu/bgrganecsht-ihoensa dso/n4 4k7e2e@p{i#n1g4 6C2h}r)o omne Dproirvte r1 3s0a66fe
+.On
+ly local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeSDtrairvteirng  Cwharso mseDtriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/braanch-heads/4472@{#1462}) on port 7216
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+rted successfully.
+ChromeDriver was started successfully.
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 44098
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 16417
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 6594
+Only local connecStitoanrst inagr eC hraomlelDoriwveedr. 9
+1.P0lS.e4ta4as7r2et. i1sn01ge  e(Ca hfr5o2mahe9tD0trbpifs8v:7e/0r/3 91c0.hd0rdo.1m54e24d37r42i8.6vae11r0c.1dc 3h(raoeam2f5i5cu25mad.97o6r0cbg9f/bs8-7er0ec3uf0rsid/tbdyr1-a5cn2ocn3hs-4ih8dee6ardaas1t/ci4do43n7as2e @2f{5o#r1c 45s6du27g}6g)ec so9tnbi -opnroser fto ns1 /3kbe8re8ap9nicn
+hgO- nhClehyar dolsmo/ec4Da4rli 7vc2eo@rn {ns#ea1cft4ei6.o2n}
+s)  aorne  palolrotw e8d2.07
+P
+lOenalsey  selocale  hctotnpnse:c//ticohnrso maerder iavlelro.wcehdr.om
+iPluemas.eo rsge/es ehctutrpist:y/-/ccohnrsoimdeedrraitvieorn.sc hfroorm isuumg.goersgt/isoencsu roint yk-eceopnisnigd eCrhartoimoenDsr ifvoer sru gsgaefset.io
+ns on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+Jul 08, 2021 4:30:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:30:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:30:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:30:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:30:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:30:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:30:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:30:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:31:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:31:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Forgot Password link&quot;, &quot;Optional[Login page feature]&quot;](2)" classname="parallel.MyTestNGRunner" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="runScenario[&quot;Login with correct credentials&quot;, &quot;Optional[Login page feature]&quot;](3)" classname="parallel.MyTestNGRunner" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+    <system-out><![CDATA[
+@Login @Regression @Skip @skip_scenario
+Scenario: Login with correct credentials           # src/test/resources/parallel/LoginPage.feature:16
+SKIPPED SCENARIOS: Login with correct credentials
+      org.junit.AssumptionViolatedException: got: <false>, expected: is <true>
+	at org.junit.Assume.assumeThat(Assume.java:106)
+	at org.junit.Assume.assumeTrue(Assume.java:50)
+	at parallel.ApplicationHooks.skipScenario(ApplicationHooks.java:27)
+
+Browser value is: chrome
+
+@vnExpress
+Scenario: VnExpress page title                                                   # src/test/resources/parallel/VNExHomePage.feature:4
+Browser value is: chrome
+  Given user is on login page                      # parallel.LoginPageSteps.user_is_on_login_page()
+  When user enters username "quannguyen@gmail.com" # parallel.LoginPageSteps.user_enters_username(java.lang.String)
+  And user enters password "Quan@123"              # parallel.LoginPageSteps.user_enters_password(java.lang.String)
+  And user clicks on Login button                  # parallel.LoginPageSteps.user_clicks_on_login_button()
+  Then user gets the title of the page             # parallel.LoginPageSteps.user_gets_the_title_of_the_page()
+  And page title should be "My account - My Store" # parallel.LoginPageSteps.page_title_should_be(java.lang.String)
+  Given user navigates to Contact Us page                                                   # parallel.ContactUsPageSteps.user_navigates_to_contact_us_page()
+  Given user navigates to Contact Us page                                                   # parallel.ContactUsPageSteps.user_navigates_to_contact_us_page()
+Login with: quannguyen@gmail.com and Quan@123
+  Given user navigates to Contact Us page                                                   # parallel.ContactUsPageSteps.user_navigates_to_contact_us_page()
+  Given user navigates to Contact Us page                                                   # parallel.ContactUsPageSteps.user_navigates_to_contact_us_page()
+  Given user navigates to Contact Us page                                                   # parallel.ContactUsPageSteps.user_navigates_to_contact_us_page()
+  Given user is on login page                  # parallel.LoginPageSteps.user_is_on_login_page()
+Page title is: Login - My Store
+  When user gets the title of the page         # parallel.LoginPageSteps.user_gets_the_title_of_the_page()
+  Then page title should be "Login - My Store" # parallel.LoginPageSteps.page_title_should_be(java.lang.String)
+  Given user navigates to Contact Us page                                                   # parallel.ContactUsPageSteps.user_navigates_to_contact_us_page()
+  When user fills the form from given sheetname "contactus" and rownumber 2                 # parallel.ContactUsPageSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+  When user fills the form from given sheetname "contactus" and rownumber 0                 # parallel.ContactUsPageSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+  When user fills the form from given sheetname "contactus" and rownumber 1                 # parallel.ContactUsPageSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+  When user fills the form from given sheetname "contactus" and rownumber 3                 # parallel.ContactUsPageSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+  When user fills the form from given sheetname "contactus" and rownumber 5                 # parallel.ContactUsPageSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+  When user fills the form from given sheetname "contactus" and rownumber 4                 # parallel.ContactUsPageSteps.user_fills_the_form_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 21343
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 41390
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 08, 2021 4:31:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:31:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:31:13 PM org.openqa.selenium.os.OsProcess destroy
+SEVERE: Unable to kill process java.lang.ProcessImpl@59d7a35d
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Login page title&quot;, &quot;Optional[Login page feature]&quot;](4)" classname="parallel.MyTestNGRunner" time="0.906">
+    <system-out><![CDATA[
+@vnExpress
+Scenario: VnExpress Dang Nhap link        # src/test/resources/parallel/VNExHomePage.feature:10
+Browser value is: chrome
+  Given user has already logged in to application   # parallel.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)
+Account page title is: My account - My Store
+  Given user is on Accounts page                    # parallel.AccountsPageSteps.user_is_on_accounts_page()
+Page title is: My account - My Store
+  When user gets the title of the page              # parallel.LoginPageSteps.user_gets_the_title_of_the_page()
+  Then page title should be "My account - My Store" # parallel.LoginPageSteps.page_title_should_be(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 21748
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Accounts page title&quot;, &quot;Optional[Account page feature]&quot;](5)" classname="parallel.MyTestNGRunner" time="1.115">
+    <system-out><![CDATA[
+@vnExpress
+Scenario: VnExpress Login with correct credentials                                         # src/test/resources/parallel/VNExHomePage.feature:15
+Browser value is: chrome
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 15735
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 08, 2021 4:31:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Contact Us scenario with different set of data&quot;, &quot;Optional[Contact Us page feature]&quot;](6)" classname="parallel.MyTestNGRunner" time="12.688">
+    <system-out><![CDATA[
+@VNInternational
+Scenario: VnExpress International page title                                                                                                                                      # src/test/resources/parallel/VNExInternationalPage.feature:4
+Browser value is: chrome
+  And user clicks on Send button                                                            # parallel.ContactUsPageSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsPageSteps.it_shows_a_successful_message(java.lang.String)
+  And user clicks on Send button                                                            # parallel.ContactUsPageSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsPageSteps.it_shows_a_successful_message(java.lang.String)
+  And user clicks on Send button                                                            # parallel.ContactUsPageSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsPageSteps.it_shows_a_successful_message(java.lang.String)
+  And user clicks on Send button                                                            # parallel.ContactUsPageSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsPageSteps.it_shows_a_successful_message(java.lang.String)
+  And user clicks on Send button                                                            # parallel.ContactUsPageSteps.user_clicks_on_send_button()
+  And user clicks on Send button                                                            # parallel.ContactUsPageSteps.user_clicks_on_send_button()
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsPageSteps.it_shows_a_successful_message(java.lang.String)
+  Then it shows a successful message "Your message has been successfully sent to our team." # parallel.ContactUsPageSteps.it_shows_a_successful_message(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 22272
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 08, 2021 4:31:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:31:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2021 4:31:28 PM org.openqa.selenium.os.OsProcess destroy
+SEVERE: Unable to kill process java.lang.ProcessImpl@453e21d2
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Contact Us scenario with different set of data&quot;, &quot;Optional[Contact Us page feature]&quot;](7)" classname="parallel.MyTestNGRunner" time="0.662">
+    <system-out><![CDATA[
+@VNInternational
+Scenario: VnExpress International headers count         # src/test/resources/parallel/VNExInternationalPage.feature:11
+Browser value is: chrome
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 7500
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Contact Us scenario with different set of data&quot;, &quot;Optional[Contact Us page feature]&quot;](8)" classname="parallel.MyTestNGRunner" time="0.795"/>
+  <testcase name="runScenario[&quot;Contact Us scenario with different set of data&quot;, &quot;Optional[Contact Us page feature]&quot;](9)" classname="parallel.MyTestNGRunner" time="0.809"/>
+  <testcase name="runScenario[&quot;Contact Us scenario with different set of data&quot;, &quot;Optional[Contact Us page feature]&quot;](10)" classname="parallel.MyTestNGRunner" time="0.923"/>
+  <testcase name="runScenario[&quot;Contact Us scenario with different set of data&quot;, &quot;Optional[Contact Us page feature]&quot;](11)" classname="parallel.MyTestNGRunner" time="1.759"/>
+  <testcase name="runScenario[&quot;VnExpress Dang Nhap link&quot;, &quot;Optional[VnExpress Home page feature]&quot;](12)" classname="parallel.MyTestNGRunner" time="11.224">
+    <system-out><![CDATA[  Given user is on VnExpress home page    # parallel.VNExHomePageSteps.user_is_on_vn_express_home_page()
+  Then Dang Nhap link should be displayed # parallel.VNExHomePageSteps.dang_nhap_link_should_be_displayed()
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2021 4:31:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;VnExpress page title&quot;, &quot;Optional[VnExpress Home page feature]&quot;](13)" classname="parallel.MyTestNGRunner" time="17.882">
+    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
+]]></failure>
+    <system-out><![CDATA[  Given user is on VnExpress home page                                                     # parallel.VNExHomePageSteps.user_is_on_vn_express_home_page()
+  And user clicks on VnExpress Dang Nhap link                                              # parallel.VNExHomePageSteps.user_clicks_on_vn_express_dang_nhap_link()
+  Given user is on VnExpress home page                                                                                                                                            # parallel.VNExHomePageSteps.user_is_on_vn_express_home_page()
+  When user clicks on International button                                                                                                                                        # parallel.VNExHomePageSteps.user_clicks_on_international_button()
+  When user logins VnExpress with username "quannguyen1@gmail.com" and password "Quan@123" # parallel.VNExHomePageSteps.user_logins_vn_express_with_username_and_password(java.lang.String,java.lang.String)
+  Given user is on VnExpress home page                                           # parallel.VNExHomePageSteps.user_is_on_vn_express_home_page()
+Page title is: VnExpress - Báo tiếng Việt nhiều người xem nhất
+  When user gets the title of the page                                           # parallel.LoginPageSteps.user_gets_the_title_of_the_page()
+  Then page title should be "VnExpress - BÃ¡o tiáº¿ng Viá»‡t nhiá»�u ngÆ°á»�i xem nháº¥tabc" # parallel.LoginPageSteps.page_title_should_be(java.lang.String)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.LoginPageSteps.page_title_should_be(LoginPageSteps.java:28)
+	at âœ½.page title should be "VnExpress - BÃ¡o tiáº¿ng Viá»‡t nhiá»�u ngÆ°á»�i xem nháº¥tabc"(file:///D:/QuanNguyen/Sofware-Testing/Projects-Demo/cucumber-java-web-demo-testng/src/test/resources/parallel/VNExHomePage.feature:7)
+
+
+    Embedding VnExpress_page_title [image/png 1012407 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Cleaning up unclosed ZipFile for archive D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\automation.xlsx
+Cleaning up unclosed ZipFile for archive D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\automation.xlsx
+Cleaning up unclosed ZipFile for archive D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\automation.xlsx
+Cleaning up unclosed ZipFile for archive D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\automation.xlsx
+Cleaning up unclosed ZipFile for archive D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\automation.xlsx
+Cleaning up unclosed ZipFile for archive D:\QuanNguyen\Sofware-Testing\Projects-Demo\cucumber-java-web-demo-testng\automation.xlsx
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;VnExpress International headers count&quot;, &quot;Optional[VnExpress International page feature]&quot;](14)" classname="parallel.MyTestNGRunner" time="26.157">
+    <system-out><![CDATA[VnExpress International page title is: VnExpress International - Latest Vietnam news, business, sports, life, travel reviews and analyses from VnExpress, Vietnam’s leading news website
+  Given user is on VnExpress International page         # parallel.VNExInternationalPageSteps.user_is_on_vn_express_international_page()
+Expected header names list: [[blank], News, Business, Travel, Life, Sports, Perspectives]
+[blank]
+News
+Business
+Travel
+Life
+Sports
+Perspectives
+Actual header names list: [[blank], News, Business, Travel, Life, Sports, Perspectives]
+  Then user gets VnExpress headers                      # parallel.VNExInternationalPageSteps.user_gets_vn_express_headers(io.cucumber.datatable.DataTable)
+  And VnExpress International headers count should be 7 # parallel.VNExInternationalPageSteps.vn_express_international_headers_count_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;VnExpress Login with correct credentials&quot;, &quot;Optional[VnExpress Home page feature]&quot;](15)" classname="parallel.MyTestNGRunner" time="35.082">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.name_user_av&quot;}&#10;  (Session info: chrome=91.0.4472.124)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;QUAN-DELL&apos;, ip: &apos;192.168.2.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\QUANNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 423e87c928d9983bc927ad91b0d189fa&#10;*** Element info: {Using=css selector, value=span.name_user_av}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"span.name_user_av"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QUAN-DELL', ip: '192.168.2.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\QUANNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 423e87c928d9983bc927ad91b0d189fa
+*** Element info: {Using=css selector, value=span.name_user_av}
+]]></failure>
+    <system-out><![CDATA[  Then "quannguyen1abc" text should be displayed in user profile button                    # parallel.VNExHomePageSteps.text_should_be_displayed_in_user_profile_button(java.lang.String)
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"span.name_user_av"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QUAN-DELL', ip: '192.168.2.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\QUANNG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 423e87c928d9983bc927ad91b0d189fa
+*** Element info: {Using=css selector, value=span.name_user_av}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.VNExHomePage.getUserNameBtnText(VNExHomePage.java:73)
+	at parallel.VNExHomePageSteps.text_should_be_displayed_in_user_profile_button(VNExHomePageSteps.java:56)
+	at âœ½."quannguyen1abc" text should be displayed in user profile button(file:///D:/QuanNguyen/Sofware-Testing/Projects-Demo/cucumber-java-web-demo-testng/src/test/resources/parallel/VNExHomePage.feature:19)
+
+
+    Embedding VnExpress_Login_with_correct_credentials [image/png 1006113 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;VnExpress International page title&quot;, &quot;Optional[VnExpress International page feature]&quot;](16)" classname="parallel.MyTestNGRunner" time="38.375">
+    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
+]]></failure>
+    <system-out><![CDATA[Page title is: VnExpress International - Latest Vietnam news, business, sports, life, travel reviews and analyses from VnExpress, Vietnam’s leading news website
+  And user gets the title of the page                                                                                                                                             # parallel.LoginPageSteps.user_gets_the_title_of_the_page()
+  Then page title should be "VnExpress International - Latest Vietnam news, business, sports, life, travel reviews and analyses from VnExpress, Vietnam 123 leading news website" # parallel.LoginPageSteps.page_title_should_be(java.lang.String)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.LoginPageSteps.page_title_should_be(LoginPageSteps.java:28)
+	at âœ½.page title should be "VnExpress International - Latest Vietnam news, business, sports, life, travel reviews and analyses from VnExpress, Vietnam 123 leading news website"(file:///D:/QuanNguyen/Sofware-Testing/Projects-Demo/cucumber-java-web-demo-testng/src/test/resources/parallel/VNExInternationalPage.feature:8)
+
+
+    Embedding VnExpress_International_page_title [image/png 1090568 bytes]
+
+]]></system-out>
+  </testcase>
+</testsuite>

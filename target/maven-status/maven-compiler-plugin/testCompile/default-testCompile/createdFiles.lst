@@ -1,5 +1,4 @@
 parallel\AccountsPageSteps.class
-testrunners\MySerenityTestNGRunner.class
 parallel\MyTestNGFailedRerun.class
 parallel\VNExInternationalPageSteps.class
 parallel\LoginPageSteps.class

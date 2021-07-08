@@ -1,221 +1,221 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "ddb402c8-b9ec-49dc-9fad-4f6224956733",
+    "id": "77ff9ec4-1d1c-4b50-9c85-85cb00e11e5e",
     "feature": "VnExpress Home page feature",
     "scenario": "VnExpress Login with correct credentials",
-    "start": 1625732733875,
-    "group": 21,
+    "start": 1625736674772,
+    "group": 23,
     "content": "",
     "tags": "@vnexpress,",
-    "end": 1625732802996,
+    "end": 1625736723656,
     "className": "failed"
   },
   {
-    "id": "2921bd64-6fe3-4fe2-8c8d-b0d8841cb157",
+    "id": "1240c18d-da3d-40d4-a2e3-6160aebe0efb",
     "feature": "Login page feature",
-    "scenario": "Forgot Password link",
-    "start": 1625732714447,
-    "group": 22,
+    "scenario": "Login with correct credentials",
+    "start": 1625736662503,
+    "group": 16,
     "content": "",
-    "tags": "@login,@smoke,@skip_scenario,",
-    "end": 1625732722136,
+    "tags": "@login,@regression,@skip,@skip_scenario,",
+    "end": 1625736673364,
     "className": "skipped"
   },
   {
-    "id": "823c0635-30d3-414f-a06e-9022bfdcd69b",
-    "feature": "VnExpress Home page feature",
-    "scenario": "VnExpress Dang Nhap link",
-    "start": 1625732725983,
-    "group": 14,
-    "content": "",
-    "tags": "@vnexpress,",
-    "end": 1625732756481,
-    "className": "passed"
-  },
-  {
-    "id": "651b0e6c-55c1-4863-97b2-86a6411deb85",
+    "id": "2d29013d-5c51-4745-86b2-d00090fa2d42",
     "feature": "Contact Us page feature",
     "scenario": "Contact Us scenario with different set of data",
-    "start": 1625732714516,
-    "group": 15,
-    "content": "",
-    "tags": "@contactus,",
-    "end": 1625732736204,
-    "className": "passed"
-  },
-  {
-    "id": "13e9b57c-750a-4cea-8a8b-7fff0d99b8c2",
-    "feature": "VnExpress International page feature",
-    "scenario": "VnExpress International headers count",
-    "start": 1625732736296,
-    "group": 16,
-    "content": "",
-    "tags": "@vninternational,",
-    "end": 1625732770881,
-    "className": "passed"
-  },
-  {
-    "id": "3db337e0-990b-4e5e-8f5a-caff5fd385f7",
-    "feature": "VnExpress International page feature",
-    "scenario": "VnExpress International page title",
-    "start": 1625732736211,
-    "group": 15,
-    "content": "",
-    "tags": "@vninternational,",
-    "end": 1625732807745,
-    "className": "failed"
-  },
-  {
-    "id": "c3879743-3ad7-4f9c-b17a-f62feab5a27a",
-    "feature": "Contact Us page feature",
-    "scenario": "Contact Us scenario with different set of data",
-    "start": 1625732714514,
+    "start": 1625736655213,
     "group": 17,
     "content": "",
     "tags": "@contactus,",
-    "end": 1625732740869,
+    "end": 1625736689580,
     "className": "passed"
   },
   {
-    "id": "b4744982-51b2-42d6-89ba-853d35db9b52",
+    "id": "d97b53dc-2378-46cc-8ccf-470c6127a08e",
     "feature": "VnExpress Home page feature",
-    "scenario": "VnExpress page title",
-    "start": 1625732722146,
-    "group": 22,
+    "scenario": "VnExpress Dang Nhap link",
+    "start": 1625736673383,
+    "group": 16,
     "content": "",
     "tags": "@vnexpress,",
-    "end": 1625732749739,
+    "end": 1625736699873,
+    "className": "passed"
+  },
+  {
+    "id": "8bf4af5c-a3aa-450d-a713-a8e88ec987bc",
+    "feature": "VnExpress International page feature",
+    "scenario": "VnExpress International page title",
+    "start": 1625736675934,
+    "group": 15,
+    "content": "",
+    "tags": "@vninternational,",
+    "end": 1625736726996,
     "className": "failed"
   },
   {
-    "id": "56d62841-9afa-4131-ba99-453a33174c39",
+    "id": "dd9f663a-eae0-482d-9824-b3311ee034c4",
+    "feature": "Login page feature",
+    "scenario": "Login page title",
+    "start": 1625736655220,
+    "group": 23,
+    "content": "",
+    "tags": "@login,@smoke,",
+    "end": 1625736674749,
+    "className": "passed"
+  },
+  {
+    "id": "f248ac97-967d-4eb6-a849-02ac843b812a",
     "feature": "Contact Us page feature",
     "scenario": "Contact Us scenario with different set of data",
-    "start": 1625732714515,
+    "start": 1625736655212,
+    "group": 22,
+    "content": "",
+    "tags": "@contactus,",
+    "end": 1625736689302,
+    "className": "passed"
+  },
+  {
+    "id": "b8ca83ca-4847-462f-8d53-3a8713ef9328",
+    "feature": "Contact Us page feature",
+    "scenario": "Contact Us scenario with different set of data",
+    "start": 1625736655212,
     "group": 18,
     "content": "",
     "tags": "@contactus,",
-    "end": 1625732737539,
+    "end": 1625736688454,
     "className": "passed"
   },
   {
-    "id": "7771c704-5d63-4169-905f-b40a982043cc",
-    "feature": "Account page feature",
-    "scenario": "Accounts page title",
-    "start": 1625732714517,
-    "group": 13,
-    "content": "",
-    "tags": "@accounts,",
-    "end": 1625732742960,
-    "className": "passed"
-  },
-  {
-    "id": "8ddcd931-cbf9-48f1-b3b2-c9b10fc7bae2",
+    "id": "72d33265-b499-4097-a6f9-4026dfb30b55",
     "feature": "Contact Us page feature",
     "scenario": "Contact Us scenario with different set of data",
-    "start": 1625732714516,
-    "group": 16,
-    "content": "",
-    "tags": "@contactus,",
-    "end": 1625732736284,
-    "className": "passed"
-  },
-  {
-    "id": "76c1de8e-b14f-4298-b333-b6f780487d0a",
-    "feature": "Login page feature",
-    "scenario": "Login page title",
-    "start": 1625732714517,
-    "group": 21,
-    "content": "",
-    "tags": "@login,@smoke,",
-    "end": 1625732733866,
-    "className": "passed"
-  },
-  {
-    "id": "2c23b1f4-e1ed-4826-a032-cf441c4379d9",
-    "feature": "Contact Us page feature",
-    "scenario": "Contact Us scenario with different set of data",
-    "start": 1625732714515,
+    "start": 1625736655219,
     "group": 19,
     "content": "",
     "tags": "@contactus,",
-    "end": 1625732738735,
+    "end": 1625736689474,
     "className": "passed"
   },
   {
-    "id": "a2807712-775a-4aad-a48f-52768bce8e27",
-    "feature": "Account page feature",
-    "scenario": "Accounts section count",
-    "start": 1625732714517,
-    "group": 14,
-    "content": "",
-    "tags": "@accounts,@skip_scenario,",
-    "end": 1625732721620,
-    "className": "skipped"
-  },
-  {
-    "id": "aadff6a0-130d-4f12-9fe2-26e05d3ed99c",
+    "id": "986644eb-85dd-41f4-b7d2-60d12f10fa74",
     "feature": "Login page feature",
-    "scenario": "Login with correct credentials",
-    "start": 1625732721638,
-    "group": 14,
+    "scenario": "Forgot Password link",
+    "start": 1625736655163,
+    "group": 24,
     "content": "",
-    "tags": "@login,@regression,@skip,@skip_scenario,",
-    "end": 1625732725974,
+    "tags": "@login,@smoke,@skip_scenario,",
+    "end": 1625736662498,
     "className": "skipped"
   },
   {
-    "id": "0c8c91db-66d2-4751-b86b-02876775a781",
+    "id": "75075331-636c-4f35-baf8-5ba42a1b1c20",
+    "feature": "Account page feature",
+    "scenario": "Accounts page title",
+    "start": 1625736655222,
+    "group": 15,
+    "content": "",
+    "tags": "@accounts,",
+    "end": 1625736675924,
+    "className": "passed"
+  },
+  {
+    "id": "08390f8d-80f5-4ad7-bbca-3959748e1ce2",
+    "feature": "VnExpress Home page feature",
+    "scenario": "VnExpress page title",
+    "start": 1625736662511,
+    "group": 24,
+    "content": "",
+    "tags": "@vnexpress,",
+    "end": 1625736706457,
+    "className": "failed"
+  },
+  {
+    "id": "9aa3c1f6-180d-4bff-b559-45ca0a36b61c",
     "feature": "Contact Us page feature",
     "scenario": "Contact Us scenario with different set of data",
-    "start": 1625732714515,
+    "start": 1625736655213,
     "group": 20,
     "content": "",
     "tags": "@contactus,",
-    "end": 1625732740120,
+    "end": 1625736689459,
     "className": "passed"
+  },
+  {
+    "id": "ecd84588-af68-4016-8976-1ef196f3b597",
+    "feature": "VnExpress International page feature",
+    "scenario": "VnExpress International headers count",
+    "start": 1625736688466,
+    "group": 18,
+    "content": "",
+    "tags": "@vninternational,",
+    "end": 1625736714794,
+    "className": "passed"
+  },
+  {
+    "id": "bd7a51da-949f-4a8c-b0d3-e230af4b1efe",
+    "feature": "Contact Us page feature",
+    "scenario": "Contact Us scenario with different set of data",
+    "start": 1625736655213,
+    "group": 21,
+    "content": "",
+    "tags": "@contactus,",
+    "end": 1625736690424,
+    "className": "passed"
+  },
+  {
+    "id": "956fb162-4bd3-46e8-ace9-bd7ba2a75b51",
+    "feature": "Account page feature",
+    "scenario": "Accounts section count",
+    "start": 1625736655220,
+    "group": 16,
+    "content": "",
+    "tags": "@accounts,@skip_scenario,",
+    "end": 1625736662483,
+    "className": "skipped"
   }
 ]);
 CucumberHTML.timelineGroups.pushArray([
   {
-    "id": 13,
+    "id": 15,
     "content": "Thread[TestNG-PoolService-0,5,main]"
   },
   {
-    "id": 14,
+    "id": 16,
     "content": "Thread[TestNG-PoolService-1,5,main]"
   },
   {
-    "id": 15,
+    "id": 17,
     "content": "Thread[TestNG-PoolService-2,5,main]"
   },
   {
-    "id": 16,
+    "id": 18,
     "content": "Thread[TestNG-PoolService-3,5,main]"
   },
   {
-    "id": 17,
+    "id": 19,
     "content": "Thread[TestNG-PoolService-4,5,main]"
   },
   {
-    "id": 18,
+    "id": 20,
     "content": "Thread[TestNG-PoolService-5,5,main]"
   },
   {
-    "id": 19,
+    "id": 21,
     "content": "Thread[TestNG-PoolService-6,5,main]"
   },
   {
-    "id": 20,
+    "id": 22,
     "content": "Thread[TestNG-PoolService-7,5,main]"
   },
   {
-    "id": 21,
+    "id": 23,
     "content": "Thread[TestNG-PoolService-8,5,main]"
   },
   {
-    "id": 22,
+    "id": 24,
     "content": "Thread[TestNG-PoolService-9,5,main]"
   }
 ]);
