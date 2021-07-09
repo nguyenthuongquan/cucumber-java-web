@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.Properties;
 
-public class ApplicationHooks {
+public class AppHooks {
 
     private DriverFactory driverFactory;
     private WebDriver driver;

@@ -15,7 +15,7 @@ import org.testng.annotations.DataProvider;
         features = {"@target/failedRerun.txt"}
 )
 
-public class MyTestNGFailedRerun extends AbstractTestNGCucumberTests {
+public class TestFailedRunner extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {

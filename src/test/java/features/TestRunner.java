@@ -15,11 +15,10 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"features"}, //Package to load glue code (step definitions, hooks and plugins) from.
         features = {"src/test/resources/features"} //Either a URI or path to a directory of features or a URI or path to a single feature optionally followed by a colon and line numbers.
 //        features = {"src/test/resources/features/ContactUsPage.feature"}
-        //tags = "not @Skip",
 
 )
 
-public class MyTestNGRunner extends AbstractTestNGCucumberTests {
+public class TestRunner extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {
