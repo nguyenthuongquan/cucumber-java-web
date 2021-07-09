@@ -1,13 +1,11 @@
-package parallel;
+package features;
 
 import com.pages.VNExInternationalPage;
 import com.qa.factory.DriverFactory;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
 import java.util.*;
 

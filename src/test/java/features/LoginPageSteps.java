@@ -1,4 +1,4 @@
-package parallel;
+package features;
 
 import com.pages.LoginPage;
 import com.qa.factory.DriverFactory;

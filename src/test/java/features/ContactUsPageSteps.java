@@ -1,4 +1,4 @@
-package parallel;
+package features;
 
 import com.pages.ContactUsPage;
 import com.qa.factory.DriverFactory;

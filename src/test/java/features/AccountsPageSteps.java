@@ -1,4 +1,4 @@
-package parallel;
+package features;
 
 import com.pages.AccountsPage;
 import com.pages.LoginPage;

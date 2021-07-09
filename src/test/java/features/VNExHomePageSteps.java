@@ -1,4 +1,4 @@
-package parallel;
+package features;
 
 import com.pages.VNExHomePage;
 import com.qa.factory.DriverFactory;

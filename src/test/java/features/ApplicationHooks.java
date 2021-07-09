@@ -1,4 +1,4 @@
-package parallel;
+package features;
 
 import com.qa.factory.DriverFactory;
 import com.qa.util.ConfigReader;

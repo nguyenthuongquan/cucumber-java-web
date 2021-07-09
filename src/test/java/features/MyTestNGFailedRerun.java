@@ -1,4 +1,4 @@
-package parallel;
+package features;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -7,11 +7,11 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         plugin = {"pretty",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-                "timeline:test-output-thread/",
+                "timeline:reports/thread/",
                 "rerun:target/failedRerun.txt"
         },
         monochrome = true,
-        glue = {"parallel"},
+        glue = {"features"},
         features = {"@target/failedRerun.txt"}
 )
 
