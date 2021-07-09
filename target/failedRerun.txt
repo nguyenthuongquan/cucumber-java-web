@@ -1,2 +1,0 @@
-file:src/test/resources/parallel/VNExHomePage.feature:4:15
-file:src/test/resources/parallel/VNExInternationalPage.feature:4
