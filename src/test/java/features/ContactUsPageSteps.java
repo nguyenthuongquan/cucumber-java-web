@@ -1,8 +1,8 @@
 package features;
 
 import com.pages.ContactUsPage;
-import com.qa.factory.DriverFactory;
-import com.qa.util.ExcelReader;
+import com.util.DriverFactory;
+import com.util.ExcelReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

@@ -1,4 +1,4 @@
-package com.qa.util;
+package com.util;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;

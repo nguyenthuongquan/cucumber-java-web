@@ -1,7 +1,7 @@
 package features;
 
-import com.qa.factory.DriverFactory;
-import com.qa.util.ConfigReader;
+import com.util.DriverFactory;
+import com.util.ConfigReader;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

@@ -1,4 +1,4 @@
-package com.qa.factory;
+package com.util;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
