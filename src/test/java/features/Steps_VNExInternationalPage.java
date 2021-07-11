@@ -9,7 +9,7 @@ import org.junit.Assert;
 
 import java.util.*;
 
-public class VNExInternationalPageSteps {
+public class Steps_VNExInternationalPage {
 
     private VNExInternationalPage vnExInternationalPage = new VNExInternationalPage(DriverFactory.getDriver());
 
@@ -19,7 +19,6 @@ public class VNExInternationalPageSteps {
         String title = vnExInternationalPage.getPageTitle();
         System.out.println("VnExpress International page title is: " + title);
     }
-
 
     @Then("user gets VnExpress headers")
     public void user_gets_vn_express_headers(DataTable headersTable) {
@@ -33,8 +32,6 @@ public class VNExInternationalPageSteps {
     @Then("VnExpress International headers count should be {int}")
     public void vn_express_international_headers_count_should_be(Integer expectedHeaderCount) {
         Assert.assertEquals(vnExInternationalPage.getHeadersCount(), (int) expectedHeaderCount);
-
     }
-
 
 }

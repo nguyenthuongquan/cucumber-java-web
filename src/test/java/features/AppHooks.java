@@ -1,8 +1,7 @@
 package features;
 
-import com.util.DriverFactory;
 import com.util.ConfigReader;
-
+import com.util.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -20,10 +19,9 @@ public class AppHooks {
     private ConfigReader configReader;
     Properties prop;
 
-
     @Before(value = "@skip_scenario", order = 0)
     public void skipScenario(Scenario scenario) {
-        System.out.println("SKIPPED SCENARIOS: " + scenario.getName());
+        System.out.println("Skipped scenario: " + scenario.getName());
         Assume.assumeTrue(false);
     }
 
@@ -43,7 +41,6 @@ public class AppHooks {
     @After(order = 1)
     public void tearDown(Scenario scenario) {
         if(scenario.isFailed()) {
-            //take screenshot
             String screenshotName = scenario.getName().replace(" ", "_");
             byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(sourcePath, "image/png", screenshotName);

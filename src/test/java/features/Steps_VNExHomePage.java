@@ -7,7 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class VNExHomePageSteps {
+public class Steps_VNExHomePage {
 
     private VNExHomePage vnExHomePage = new VNExHomePage(DriverFactory.getDriver());
 

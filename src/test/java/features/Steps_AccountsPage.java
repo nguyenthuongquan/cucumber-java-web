@@ -11,7 +11,7 @@ import org.junit.Assert;
 import java.util.List;
 import java.util.Map;
 
-public class AccountsPageSteps {
+public class Steps_AccountsPage {
 
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
     private AccountsPage accountsPage;
@@ -35,17 +35,13 @@ public class AccountsPageSteps {
     public void user_gets_accounts_section(DataTable sectionsTable) {
         List<String> expectAccountSectionList = sectionsTable.asList();
         System.out.println("Expected accounts section list: " + expectAccountSectionList);
-
         List<String> actualAccountSectionList = accountsPage.getAccountSectionsList();
         System.out.println("Actual accounts section list: " + actualAccountSectionList);
-
         Assert.assertTrue(expectAccountSectionList.containsAll(actualAccountSectionList));
     }
 
     @Then("accounts section count should be {int}")
     public void accounts_section_count_should_be(Integer expectedSectionCount) {
-        Assert.assertTrue(accountsPage.getAccountSectionCount() == expectedSectionCount);
+        Assert.assertEquals(accountsPage.getAccountSectionCount(), (int) expectedSectionCount);
     }
-
-
 }

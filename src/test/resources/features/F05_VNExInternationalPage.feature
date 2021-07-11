@@ -1,14 +1,15 @@
-Feature: VnExpress International page feature
+@VNInternational
+Feature: F05 - VnExpress International page feature
 
-  @VNInternational
-  Scenario: VnExpress International page title
+  @TC05-001
+  Scenario: TC05-001 VnExpress International page title
     Given user is on VnExpress home page
     When user clicks on International button
     And user gets the title of the page
     Then page title should be "VnExpress International - Latest Vietnam news, business, sports, life, travel reviews and analyses from VnExpress, Vietnam 123 leading news website"
 
-  @VNInternational
-  Scenario: VnExpress International headers count
+  @TC05-002
+  Scenario: TC05-002 VnExpress International headers count
     Given user is on VnExpress International page
     Then user gets VnExpress headers
       |[blank]|

@@ -1,7 +1,8 @@
-Feature: Contact Us page feature
+@contactUs
+Feature: F02 - Contact Us page feature
 
-  @contactUs
-  Scenario Outline: Contact Us scenario with different set of data
+  @TC02-001
+  Scenario Outline: TC02-001 Contact Us scenario with different set of data
     Given user navigates to Contact Us page
     When user fills the form from given sheetname "<SheetName>" and rownumber <RowNumber>
     And user clicks on Send button

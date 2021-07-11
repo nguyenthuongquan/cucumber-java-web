@@ -7,7 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class LoginPageSteps {
+public class Steps_LoginPage {
 
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
     private static String title;

@@ -1,19 +1,19 @@
-@Login
-Feature: Login page feature
+@login
+Feature: F03 - Login page feature
 
-  @Smoke
-  Scenario: Login page title
+  @TC03-001 @Smoke
+  Scenario: TC03-001 Login page title
     Given user is on login page
     When user gets the title of the page
     Then page title should be "Login - My Store"
 
-  @Smoke @skip_scenario
-  Scenario: Forgot Password link
+  @TC03-002 @Smoke @skip_scenario
+  Scenario: TC03-002 Forgot Password link
     Given user is on login page
     Then forgot password link should be displayed
 
-  @Regression @Skip @skip_scenario
-  Scenario: Login with correct credentials
+  @TC03-003 @Regression @skip_scenario
+  Scenario: TC03-003 Login with correct credentials
     Given user is on login page
     When user enters username "quannguyen@gmail.com"
     And user enters password "Quan@123"
