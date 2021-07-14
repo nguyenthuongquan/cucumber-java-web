@@ -6,7 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        //tags = "not @skip_scenario",
+//        tags = "not @skip",
         features = "src/test/resources/features",
         glue = "features",
         publish = true,

@@ -1,19 +1,19 @@
 @vnExpress
-Feature: F04 - VnExpress Home page feature
+Feature: F24 - VnExpress Home page feature
 
-  @TC04-001 @Smoke
-  Scenario: TC04-001 VnExpress page title
+  @TC24-001 @Smoke
+  Scenario: TC24-001 VnExpress page title
     Given user is on VnExpress home page
     When user gets the title of the page
     Then page title should be "VnExpress - Báo tiếng Việt nhiều người xem nhất"
 
-  @TC04-002 @Smoke
-  Scenario: TC04-002 VnExpress Dang Nhap link
+  @TC24-002 @Smoke
+  Scenario: TC24-002 VnExpress Dang Nhap link
     Given user is on VnExpress home page
     Then Dang Nhap link should be displayed
 
-  @TC04-003 @Smoke
-  Scenario: TC04-003 VnExpress Login with correct credentials
+  @TC24-003 @Smoke
+  Scenario: TC24-003 VnExpress Login with correct credentials
     Given user is on VnExpress home page
     And user clicks on VnExpress Dang Nhap link
     When user logins VnExpress with username "quannguyen1@gmail.com" and password "Quan@123"

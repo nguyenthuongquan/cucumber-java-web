@@ -1,19 +1,19 @@
 @login
-Feature: F03 - Login page feature
+Feature: F08 - Login page feature
 
-  @TC03-001
-  Scenario: TC03-001 Login page title
+  @TC08-001
+  Scenario: TC08-001 Login page title
     Given user is on login page
     When user gets the title of the page
     Then page title should be "Login - My Store"
 
-  @TC03-002
-  Scenario: TC03-002 Forgot Password link
+  @TC08-002
+  Scenario: TC08-002 Forgot Password link
     Given user is on login page
     Then forgot password link should be displayed
 
-  @TC03-003
-  Scenario: TC03-003 Login with correct credentials
+  @TC08-003
+  Scenario: TC08-003 Login with correct credentials
     Given user is on login page
     When user enters username "quannguyen@gmail.com"
     And user enters password "Quan@123"

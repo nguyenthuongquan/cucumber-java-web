@@ -19,7 +19,7 @@ public class AppHooks {
     private ConfigReader configReader;
     Properties prop;
 
-    @Before(value = "@skip_scenario", order = 0)
+    @Before(value = "@skip", order = 0)
     public void skipScenario(Scenario scenario) {
         System.out.println("Skipped scenario: " + scenario.getName());
         Assume.assumeTrue(false);

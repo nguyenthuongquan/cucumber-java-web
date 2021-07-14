@@ -20,11 +20,12 @@ public class Steps_LoginPage {
     @Then("user gets the title of the page")
     public void user_gets_the_title_of_the_page() {
         title = loginPage.getLoginPageTitle();
-        System.out.println("Page title is: " + title);
     }
 
     @Then("page title should be {string}")
     public void page_title_should_be(String expectedTitleName) {
+        System.out.println("Expected: " + expectedTitleName);
+        System.out.println("Actual: " + title);
         Assert.assertTrue(title.contains(expectedTitleName));
     }
 

@@ -5,7 +5,6 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        //tags = "not @skip_scenario",
         features = "@target/failedRerun.txt",
         glue = "features",
         publish = true,
@@ -16,7 +15,7 @@ import org.testng.annotations.DataProvider;
                 "rerun:target/failedRerun.txt"}
 )
 
-public class TestFailedRunner extends AbstractTestNGCucumberTests {
+public class TestRunnerFailed extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {
