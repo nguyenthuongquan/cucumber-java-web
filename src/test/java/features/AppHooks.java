@@ -33,14 +33,14 @@ public class AppHooks {
 
     @Before(order = 2)
     public void launchBrowser() {
-        String browserName = prop.getProperty("browser");
+        String browserName = prop.getProperty("Browser");
         driverFactory = new DriverFactory();
         driver = driverFactory.init_driver(browserName);
     }
 
     @After(order = 1)
     public void tearDown(Scenario scenario) {
-        if(scenario.isFailed()) {
+        if (scenario.isFailed()) {
             String screenshotName = scenario.getName().replace(" ", "_");
             byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(sourcePath, "image/png", screenshotName);
@@ -51,4 +51,5 @@ public class AppHooks {
     public void quitBrowser() {
         driver.quit();
     }
+
 }

@@ -11,27 +11,19 @@ import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
 
-    public WebDriver driver;
-
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
-
-    /**
-     * This method is used to initialize the threadLocal driver on the basis of given browser
-     * @param browser
-     * @return this will return tlDriver
-     */
 
     public WebDriver init_driver(String browser) {
         System.out.println("Browser value is: " + browser);
-        if (browser.equals("chrome")) {
+        if (browser.equalsIgnoreCase("Chrome")) {
             WebDriverManager.chromedriver().setup();
             tlDriver.set(new ChromeDriver());
-        } else if (browser.equals("firefox")) {
+        } else if (browser.equalsIgnoreCase("Firefox")) {
             WebDriverManager.firefoxdriver().setup();
             tlDriver.set(new FirefoxDriver());
-        } else if (browser.equals("safari")) {
+        } else if (browser.equalsIgnoreCase("Safari")) {
             tlDriver.set(new SafariDriver());
-        } else if (browser.equals("edge")) {
+        } else if (browser.equalsIgnoreCase("Edge")) {
             WebDriverManager.edgedriver().setup();
             tlDriver.set(new EdgeDriver());
         } else
@@ -39,16 +31,12 @@ public class DriverFactory {
 
         getDriver().manage().deleteAllCookies();
         getDriver().manage().window().maximize();
-        getDriver().manage().timeouts().pageLoadTimeout(60L, TimeUnit.SECONDS);
+        getDriver().manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+        getDriver().manage().timeouts().setScriptTimeout(Constants.SCRIPT_TIMEOUT, TimeUnit.SECONDS);
         return getDriver();
     }
 
-    /**
-     * this is used to get the driver with ThreadLocal
-     * @return tlDriver
-     */
     public static synchronized WebDriver getDriver() {
         return tlDriver.get();
     }
-
 }
