@@ -15,7 +15,7 @@ Feature: F20 - VnExpress International page feature
       |[blank]|
       |News|
       |Business|
-      |TravelX|
+      |Travel|
       |Life|
       |Sports|
       |Perspectives|
