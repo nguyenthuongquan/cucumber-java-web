@@ -15,7 +15,7 @@ Feature: F35 - VnExpress International page feature
       |[blank]|
       |News|
       |Business|
-      |TravelX|
+      |Travel|
       |Life|
       |Sports|
       |Perspectives|

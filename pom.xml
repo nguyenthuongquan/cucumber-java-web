@@ -214,6 +214,8 @@
                 <configuration>
                     <includes>
                         <include>**/TestRunner.java</include>
+                        <include>**/TestRunnerFailed.java</include>
+                        <include>**/TestRunnerFailedRetry.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                     <argLine>
@@ -224,7 +226,7 @@
                         <allure.link.issue.pattern>https://example.org/browse/{}</allure.link.issue.pattern>
                         <allure.link.tms.pattern>https://example.org/browse/{}</allure.link.tms.pattern>
                     </systemPropertyVariables>
-
+                    <rerunFailingTestsCount>2</rerunFailingTestsCount>
                 </configuration>
                 <dependencies>
                     <dependency>
