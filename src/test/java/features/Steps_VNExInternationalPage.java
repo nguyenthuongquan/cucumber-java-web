@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
-import java.util.*;
+import java.util.List;
 
 public class Steps_VNExInternationalPage {
 

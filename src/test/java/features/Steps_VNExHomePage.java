@@ -53,6 +53,7 @@ public class Steps_VNExHomePage {
 
     @Then("{string} text should be displayed in user profile button")
     public void text_should_be_displayed_in_user_profile_button(String username) {
+        vnExHomePage.waitUntilButtonUserNameAppears();
         Assert.assertEquals(vnExHomePage.getUserNameBtnText(), username);
     }
 }

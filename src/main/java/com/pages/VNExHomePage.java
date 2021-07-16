@@ -1,8 +1,9 @@
 package com.pages;
 
+import com.util.ElementUtil;
+import lombok.SneakyThrows;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class VNExHomePage {
 
@@ -48,22 +49,18 @@ public class VNExHomePage {
         driver.findElement(login_btn).click();
     }
 
+    public void waitUntilButtonUserNameAppears() {
+        ElementUtil.waitUntilElementAppears(userName_btn);
+    }
+
+    @SneakyThrows
     public void loginVnExpress(String email, String password) {
-        driver.switchTo().frame((WebElement) driver.findElement(login_iframe));
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.switchTo().frame(driver.findElement(login_iframe));
         driver.findElement(email_tbx).sendKeys(email);
         driver.findElement(password_tbx).sendKeys(password);
         driver.findElement(login_btn).click();
         driver.switchTo().defaultContent();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Thread.sleep(1000);
     }
 
     public boolean isDangNhapBtnExist() {
