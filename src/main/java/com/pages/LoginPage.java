@@ -5,13 +5,12 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
 
-    private WebDriver driver;
-
     //1. Locators
     private final By email_tbx = By.id("email");
     private final By password_tbx = By.id("passwd");
     private final By login_btn = By.id("SubmitLogin");
     private final By forgotPw_lnk = By.linkText("Forgot your password?");
+    private WebDriver driver;
 
     //2. Constructor
     public LoginPage(WebDriver driver) {

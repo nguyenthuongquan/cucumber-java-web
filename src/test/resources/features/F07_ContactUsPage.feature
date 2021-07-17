@@ -9,10 +9,10 @@ Feature: F07 - Contact Us page feature
     Then it shows a successful message "Your message has been successfully sent to our team."
 
     Examples:
-    |SheetName|RowNumber|
-    |contactus|0        |
-    |contactus|1        |
-    |contactus|2        |
-    |contactus|3        |
-    |contactus|4        |
-    |contactus|5        |
+      | SheetName | RowNumber |
+      | contactus | 0         |
+      | contactus | 1         |
+      | contactus | 2         |
+      | contactus | 3         |
+      | contactus | 4         |
+      | contactus | 5         |

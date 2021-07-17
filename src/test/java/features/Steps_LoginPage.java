@@ -1,9 +1,7 @@
 package features;
 
 import com.pages.LoginPage;
-import com.pages.Page;
 import com.util.DriverFactory;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;

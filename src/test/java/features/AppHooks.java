@@ -14,10 +14,10 @@ import java.util.Properties;
 
 public class AppHooks {
 
+    Properties prop;
     private DriverFactory driverFactory;
     private WebDriver driver;
     private ConfigReader configReader;
-    Properties prop;
 
     @Before(value = "@skip", order = 0)
     public void skipScenario(Scenario scenario) {

@@ -3,7 +3,6 @@ package features;
 import com.pages.ContactUsPage;
 import com.util.DriverFactory;
 import com.util.ExcelReader;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -21,7 +20,7 @@ public class Steps_ContactUsPage {
     @When("user fills the form from given sheetname {string} and rownumber {int}")
     public void user_fills_the_form_from_given_sheetname_and_rownumber(String sheetName, Integer rowNumber) throws IOException, InvalidFormatException {
         ExcelReader reader = new ExcelReader();
-        List<Map<String,String>> testData =
+        List<Map<String, String>> testData =
                 reader.getData(System.getProperty("user.dir") + "/automation.xlsx", sheetName);
         String heading = testData.get(rowNumber).get("subjectheading");
         String email = testData.get(rowNumber).get("email");

@@ -12,11 +12,11 @@ Feature: F35 - VnExpress International page feature
   Scenario: TC35-002 VnExpress International headers count
     Given user is on VnExpress International page
     Then user gets VnExpress headers
-      |[blank]|
-      |News|
-      |Business|
-      |Travel|
-      |Life|
-      |Sports|
-      |Perspectives|
+      | [blank]      |
+      | News         |
+      | Business     |
+      | Travel       |
+      | Life         |
+      | Sports       |
+      | Perspectives |
     And VnExpress International headers count should be 7

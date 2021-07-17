@@ -9,10 +9,9 @@ import java.util.List;
 
 public class AccountsPage {
 
-    private WebDriver driver;
-
     //1. Locators
     private final By account_sections = By.cssSelector("div#center_column span");
+    private WebDriver driver;
 
     //2. Constructor
     public AccountsPage(WebDriver driver) {

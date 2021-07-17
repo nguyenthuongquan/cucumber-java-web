@@ -9,10 +9,9 @@ import java.util.List;
 
 public class VNExInternationalPage {
 
-    private WebDriver driver;
-
     //1. Locators
     private final By headers_lbl = By.xpath("//div[contains(@class,'item_menu_left')]");
+    private WebDriver driver;
 
     //2. Constructor
     public VNExInternationalPage(WebDriver driver) {

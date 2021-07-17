@@ -1,10 +1,8 @@
 package features;
 
-import com.pages.Page;
 import com.pages.VNExInternationalPage;
 import com.util.DriverFactory;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 

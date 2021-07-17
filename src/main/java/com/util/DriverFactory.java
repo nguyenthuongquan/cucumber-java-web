@@ -13,6 +13,10 @@ public class DriverFactory {
 
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
+    public static synchronized WebDriver getDriver() {
+        return tlDriver.get();
+    }
+
     public WebDriver init_driver(String browser) {
         System.out.println("Browser value is: " + browser);
         if (browser.equalsIgnoreCase("Chrome")) {
@@ -34,9 +38,5 @@ public class DriverFactory {
         getDriver().manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         getDriver().manage().timeouts().setScriptTimeout(Constants.SCRIPT_TIMEOUT, TimeUnit.SECONDS);
         return getDriver();
-    }
-
-    public static synchronized WebDriver getDriver() {
-        return tlDriver.get();
     }
 }

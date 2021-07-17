@@ -13,9 +13,4 @@ public class Constants {
     public static final String URL_VNEXPRESS_INTERNATIONAL_PAGE = "https://e.vnexpress.net/";
 
 
-
-
-
-
-
 }

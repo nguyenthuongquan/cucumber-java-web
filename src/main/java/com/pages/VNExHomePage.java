@@ -7,17 +7,15 @@ import org.openqa.selenium.WebDriver;
 
 public class VNExHomePage {
 
-    private WebDriver driver;
-
     //1. Locators
     private final By international_btn = By.cssSelector(".evne");
     private final By dangNhap_btn = By.id("myvne");
     private final By userName_btn = By.cssSelector("span.name_user_av");
-
     private final By login_iframe = By.cssSelector("iframe.mfp-iframe.iframe_guest");
     private final By email_tbx = By.id("myvne_email_input");
     private final By password_tbx = By.id("myvne_password_input");
     private final By login_btn = By.id("myvne_button_login");
+    private WebDriver driver;
 
     //2. Constructor
     public VNExHomePage(WebDriver driver) {

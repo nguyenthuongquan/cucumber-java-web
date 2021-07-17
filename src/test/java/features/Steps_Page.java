@@ -9,8 +9,8 @@ import org.junit.Assert;
 
 public class Steps_Page {
 
-    private Page page = new Page(DriverFactory.getDriver());
     private static String title;
+    private Page page = new Page(DriverFactory.getDriver());
 
     @Given("user is on VnExpress home page")
     public void user_is_on_vn_express_home_page() {
