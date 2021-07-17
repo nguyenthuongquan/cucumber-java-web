@@ -2,6 +2,8 @@ package features;
 
 import com.pages.AccountsPage;
 import com.pages.LoginPage;
+import com.pages.Page;
+import com.util.Constants;
 import com.util.DriverFactory;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -13,6 +15,7 @@ import java.util.Map;
 
 public class Steps_AccountsPage {
 
+    private Page page = new Page(DriverFactory.getDriver());
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
     private AccountsPage accountsPage;
 
@@ -21,14 +24,8 @@ public class Steps_AccountsPage {
         List<Map<String, String>> creList = credTable.asMaps();
         String username = creList.get(0).get("username");
         String password = creList.get(0).get("password");
-        DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+        page.navigateTo(Constants.URL_HOME_PAGE);
         accountsPage = loginPage.doLogin(username, password);
-    }
-
-    @Given("user is on Accounts page")
-    public void user_is_on_accounts_page() {
-        String title = accountsPage.getAccountPageTitle();
-        System.out.println("Account page title is: " + title);
     }
 
     @Then("user gets accounts section")

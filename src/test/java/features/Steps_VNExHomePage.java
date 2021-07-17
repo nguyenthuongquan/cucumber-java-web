@@ -11,11 +11,6 @@ public class Steps_VNExHomePage {
 
     private VNExHomePage vnExHomePage = new VNExHomePage(DriverFactory.getDriver());
 
-    @Given("user is on VnExpress home page")
-    public void user_is_on_vn_express_home_page() {
-        DriverFactory.getDriver().get("https://vnexpress.net/");
-    }
-
     @Then("Dang Nhap link should be displayed")
     public void dang_nhap_link_should_be_displayed() {
         Assert.assertTrue(vnExHomePage.isDangNhapBtnExist());

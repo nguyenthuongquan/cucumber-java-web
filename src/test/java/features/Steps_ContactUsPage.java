@@ -18,11 +18,6 @@ public class Steps_ContactUsPage {
 
     private ContactUsPage contactUsPage = new ContactUsPage(DriverFactory.getDriver());
 
-    @Given("user navigates to Contact Us page")
-    public void user_navigates_to_contact_us_page() {
-        DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=contact");
-    }
-
     @When("user fills the form from given sheetname {string} and rownumber {int}")
     public void user_fills_the_form_from_given_sheetname_and_rownumber(String sheetName, Integer rowNumber) throws IOException, InvalidFormatException {
         ExcelReader reader = new ExcelReader();

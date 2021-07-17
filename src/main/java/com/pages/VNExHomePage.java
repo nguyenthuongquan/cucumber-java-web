@@ -19,16 +19,12 @@ public class VNExHomePage {
     private final By password_tbx = By.id("myvne_password_input");
     private final By login_btn = By.id("myvne_button_login");
 
-    //2. Constructor of the page class
+    //2. Constructor
     public VNExHomePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    //3. Page Actions
-    public String getPageTitle() {
-        return driver.getTitle();
-    }
-
+    //3. Actions
     public void clickOnDangNhap() {
         driver.findElement(dangNhap_btn).click();
     }
@@ -56,6 +52,7 @@ public class VNExHomePage {
     @SneakyThrows
     public void loginVnExpress(String email, String password) {
         driver.switchTo().frame(driver.findElement(login_iframe));
+        Thread.sleep(1000);
         driver.findElement(email_tbx).sendKeys(email);
         driver.findElement(password_tbx).sendKeys(password);
         driver.findElement(login_btn).click();

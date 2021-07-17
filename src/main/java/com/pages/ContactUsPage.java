@@ -8,6 +8,7 @@ public class ContactUsPage {
 
     private WebDriver driver;
 
+    //1. Locators
     private By subjectHeading = By.id("id_contact");
     private By email = By.id("email");
     private By orderRef = By.id("id_order");
@@ -15,14 +16,12 @@ public class ContactUsPage {
     private By sendButton = By.id("submitMessage");
     private By successMessage = By.cssSelector("div#center_column p");
 
+    //2. Constructor
     public ContactUsPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public String getContactUsPageTitle() {
-        return driver.getTitle();
-    }
-
+    //3. Actions
     public void fillContactUsForm(String heading, String emailId, String orderReference, String message) {
         Select select = new Select(driver.findElement(subjectHeading));
         select.selectByVisibleText(heading);

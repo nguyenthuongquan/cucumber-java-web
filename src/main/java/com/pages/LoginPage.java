@@ -13,16 +13,12 @@ public class LoginPage {
     private final By login_btn = By.id("SubmitLogin");
     private final By forgotPw_lnk = By.linkText("Forgot your password?");
 
-    //2. Constructor of the page class
+    //2. Constructor
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    //3. Page Actions
-    public String getLoginPageTitle() {
-        return driver.getTitle();
-    }
-
+    //3. Actions
     public boolean isForgotPwLinkExist() {
         return driver.findElement(forgotPw_lnk).isDisplayed();
     }

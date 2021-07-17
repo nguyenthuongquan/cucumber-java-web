@@ -1,5 +1,6 @@
 package features;
 
+import com.pages.Page;
 import com.pages.VNExInternationalPage;
 import com.util.DriverFactory;
 import io.cucumber.datatable.DataTable;
@@ -12,13 +13,6 @@ import java.util.List;
 public class Steps_VNExInternationalPage {
 
     private VNExInternationalPage vnExInternationalPage = new VNExInternationalPage(DriverFactory.getDriver());
-
-    @Given("user is on VnExpress International page")
-    public void user_is_on_vn_express_international_page() {
-        DriverFactory.getDriver().get("https://e.vnexpress.net/");
-        String title = vnExInternationalPage.getPageTitle();
-        System.out.println("VnExpress International page title is: " + title);
-    }
 
     @Then("user gets VnExpress headers")
     public void user_gets_vn_express_headers(DataTable headersTable) {

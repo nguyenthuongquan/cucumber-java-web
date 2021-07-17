@@ -14,17 +14,12 @@ public class VNExInternationalPage {
     //1. Locators
     private final By headers_lbl = By.xpath("//div[contains(@class,'item_menu_left')]");
 
-
-    //2. Constructor of the page class
+    //2. Constructor
     public VNExInternationalPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    //3. Page Actions
-    public String getPageTitle() {
-        return driver.getTitle();
-    }
-
+    //3. Actions
     public int getHeadersCount() {
         return driver.findElements(headers_lbl).size();
     }
