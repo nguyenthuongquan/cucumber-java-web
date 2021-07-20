@@ -215,8 +215,8 @@
                 <configuration>
                     <includes>
                         <include>**/TestRunner.java</include>
-                        <include>**/TestRunnerFailed.java</include>
-                        <include>**/TestRunnerFailedRetry.java</include>
+<!--                        <include>**/TestRunnerFailed.java</include>-->
+<!--                        <include>**/TestRunnerFailedRetry.java</include>-->
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                     <argLine>
