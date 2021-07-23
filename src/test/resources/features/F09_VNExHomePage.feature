@@ -1,13 +1,13 @@
 @vnExpress
 Feature: F09 - VnExpress Home page feature
 
-  @TC09-001 @Smoke
+  @TC09-001
   Scenario: TC09-001 VnExpress page title
     Given user is on VnExpress home page
     When user gets the title of the page
     Then page title should be "VnExpress - Báo tiếng Việt nhiều người xem nhất"
 
-  @TC09-002 @Smoke
+  @TC09-002
   Scenario: TC09-002 VnExpress Dang Nhap link
     Given user is on VnExpress home page
     Then Dang Nhap link should be displayed
