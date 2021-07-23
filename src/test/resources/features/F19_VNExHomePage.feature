@@ -12,7 +12,7 @@ Feature: F19 - VnExpress Home page feature
     Given user is on VnExpress home page
     Then Dang Nhap link should be displayed
 
-  @TC19-003 @Smoke
+  @TC19-003
   Scenario: TC19-003 VnExpress Login with correct credentials
     Given user is on VnExpress home page
     And user clicks on VnExpress Dang Nhap link

@@ -1,7 +1,7 @@
 @VNInternational
 Feature: F25 - VnExpress International page feature
 
-  @TC25-001 @Smoke
+  @TC25-001
   Scenario: TC25-001 VnExpress International page title
     Given user is on VnExpress home page
     When user clicks on International button
