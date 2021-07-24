@@ -1,8 +1,11 @@
-package features;
+package features_backup;
 
 import com.pages.ContactUsPage;
+import com.pages.Page;
+import com.util.Constants;
 import com.util.DriverFactory;
 import com.util.ExcelReader;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -16,6 +19,12 @@ import java.util.Map;
 public class Steps_ContactUsPage {
 
     private ContactUsPage contactUsPage = new ContactUsPage(DriverFactory.getDriver());
+    private Page page = new Page(DriverFactory.getDriver());
+
+    @Given("user navigates to Contact Us page")
+    public void user_navigates_to_contact_us_page() {
+        page.navigateTo(Constants.URL_CONTACTUS_PAGE);
+    }
 
     @When("user fills the form from given sheetname {string} and rownumber {int}")
     public void user_fills_the_form_from_given_sheetname_and_rownumber(String sheetName, Integer rowNumber) throws IOException, InvalidFormatException {

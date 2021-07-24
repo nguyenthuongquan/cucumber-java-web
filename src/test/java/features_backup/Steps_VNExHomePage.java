@@ -1,6 +1,8 @@
-package features;
+package features_backup;
 
+import com.pages.Page;
 import com.pages.VNExHomePage;
+import com.util.Constants;
 import com.util.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,6 +12,13 @@ import org.junit.Assert;
 public class Steps_VNExHomePage {
 
     private VNExHomePage vnExHomePage = new VNExHomePage(DriverFactory.getDriver());
+    private Page page = new Page(DriverFactory.getDriver());
+
+    @Given("user is on VnExpress home page")
+    public void user_is_on_vn_express_home_page() {
+        page.navigateTo(Constants.URL_VNEXPRESS_HOME_PAGE);
+    }
+
 
     @Then("Dang Nhap link should be displayed")
     public void dang_nhap_link_should_be_displayed() {

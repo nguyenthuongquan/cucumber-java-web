@@ -1,4 +1,4 @@
-package features;
+package features_backup;
 
 import com.pages.AccountsPage;
 import com.pages.LoginPage;
@@ -18,6 +18,12 @@ public class Steps_AccountsPage {
     private Page page = new Page(DriverFactory.getDriver());
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
     private AccountsPage accountsPage;
+
+    @Given("user is on Accounts page")
+    public void user_is_on_accounts_page() {
+        String title = page.getPageTitle();
+        System.out.println("Account page title is: " + title);
+    }
 
     @Given("user has already logged in to application")
     public void user_has_already_logged_in_to_application(DataTable credTable) {

@@ -1,7 +1,10 @@
-package features;
+package features_backup;
 
 import com.pages.LoginPage;
+import com.pages.Page;
+import com.util.Constants;
 import com.util.DriverFactory;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -9,6 +12,12 @@ import org.junit.Assert;
 public class Steps_LoginPage {
 
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
+    private Page page = new Page(DriverFactory.getDriver());
+
+    @Given("user is on Login page")
+    public void user_is_on_login_page() {
+        page.navigateTo(Constants.URL_LOGIN_PAGE);
+    }
 
     @Then("forgot password link should be displayed")
     public void forgot_password_link_should_be_displayed() {

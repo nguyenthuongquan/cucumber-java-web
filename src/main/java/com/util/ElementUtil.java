@@ -9,4 +9,12 @@ public class ElementUtil {
         WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), Constants.IMPLICIT_WAIT);
         wait.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
     }
+
+    public static boolean isElementIsDisplayed(By byLocator) {
+        return DriverFactory.getDriver().findElement(byLocator).isDisplayed();
+    }
+
+    public static boolean isElementIsEnabled(By byLocator) {
+        return DriverFactory.getDriver().findElement(byLocator).isEnabled();
+    }
 }
