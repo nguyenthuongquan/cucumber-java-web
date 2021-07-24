@@ -1,5 +1,6 @@
 package com.pages;
 
+import com.util.ElementUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -11,6 +12,9 @@ public class FacebookLoginPage {
     private final By btn_login = By.cssSelector("button[type=submit]");
     private final By lnk_forgotPassword = By.xpath("//a[text()='Quên mật khẩu?']");
     private final By btn_signup = By.cssSelector("a[data-testid=open-registration-form-button]");
+    private final By err_emailOrPhoneDoNotMatch = By.xpath("//*[text()='Email hoặc số di động bạn nhập không kết nối với tài khoản nào. ']");
+    private final By lnk_findYourAccountAndLogin = By.xpath("//a[text()='Hãy tìm tài khoản của bạn và đăng nhập.']");
+
 
     private WebDriver driver;
 
@@ -32,6 +36,7 @@ public class FacebookLoginPage {
     public void enterEmail(String email) {
         driver.findElement(tbx_email).sendKeys(email);
     }
+
     public void enterPassword(String password) {
         driver.findElement(tbx_password).sendKeys(password);
     }
@@ -40,5 +45,11 @@ public class FacebookLoginPage {
         enterEmail(email);
         enterPassword(password);
         clickOnBtnLogin();
+    }
+
+    public boolean areLoginValidationErrorsReturned() {
+        boolean a = ElementUtil.isElementIsDisplayed(err_emailOrPhoneDoNotMatch);
+        boolean b = ElementUtil.isElementIsDisplayed(lnk_findYourAccountAndLogin);
+        return a && b;
     }
 }

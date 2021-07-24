@@ -48,13 +48,12 @@ public class AppHooks {
     }
 
 
-    @After()
+    @After(order = 1)
     public void tearDown(Scenario scenario) {
         //1. tearDown
         if (scenario.isFailed()) {
             String screenshotName = scenario.getName()
                     .replace(" ", "_")
-                    .replace("-", "_")
                     .replace("\'", "");
             byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(sourcePath, "image/png", screenshotName);

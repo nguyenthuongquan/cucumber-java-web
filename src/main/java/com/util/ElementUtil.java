@@ -13,8 +13,4 @@ public class ElementUtil {
     public static boolean isElementIsDisplayed(By byLocator) {
         return DriverFactory.getDriver().findElement(byLocator).isDisplayed();
     }
-
-    public static boolean isElementIsEnabled(By byLocator) {
-        return DriverFactory.getDriver().findElement(byLocator).isEnabled();
-    }
 }

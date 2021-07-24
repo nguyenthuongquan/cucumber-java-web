@@ -1,10 +1,8 @@
 package com.pages;
 
 import com.util.ElementUtil;
-import lombok.SneakyThrows;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class FacebookLandingPage {
 
@@ -52,8 +50,6 @@ public class FacebookLandingPage {
     }
 
     public boolean isSignupFormEnabled() {
-        ElementUtil.waitUntilElementAppears(lbl_dangKy);
-        ElementUtil.waitUntilElementAppears(lbl_nhanhChongDeDang);
         boolean a = ElementUtil.isElementIsDisplayed(lbl_dangKy);
         boolean b = ElementUtil.isElementIsDisplayed(lbl_nhanhChongDeDang);
         return a && b;

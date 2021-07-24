@@ -1,5 +1,6 @@
 package com.pages;
 
+import com.util.ElementUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -15,6 +16,7 @@ public class FacebookHomePage {
     private final By mnu_left_marketPlace = mnu_left("Marketplace");
     private final By mnu_left_watch = mnu_left("Watch");
     private final By mnu_left_event = mnu_left("Sự kiện");
+    private final By mnu_left_memory = mnu_left("Kỷ niệm");
 
     private WebDriver driver;
 
@@ -24,5 +26,15 @@ public class FacebookHomePage {
     }
 
     //3. Actions
+    public boolean isLeftNavMenuDisplayedFor(String userName) {
+        boolean a = ElementUtil.isElementIsDisplayed(mnu_left(userName));
+        boolean b = ElementUtil.isElementIsDisplayed(mnu_left_findFriends);
+        boolean c = ElementUtil.isElementIsDisplayed(mnu_left_group);
+        boolean d = ElementUtil.isElementIsDisplayed(mnu_left_marketPlace);
+        boolean e = ElementUtil.isElementIsDisplayed(mnu_left_watch);
+        boolean f = ElementUtil.isElementIsDisplayed(mnu_left_event);
+        boolean g = ElementUtil.isElementIsDisplayed(mnu_left_memory);
+        return a && b && c && d && e && f && g;
+    }
 
 }

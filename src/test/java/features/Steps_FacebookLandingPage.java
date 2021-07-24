@@ -1,15 +1,14 @@
 package features;
 
 import com.pages.FacebookLandingPage;
-import com.pages.LoginPage;
 import com.pages.Page;
 import com.util.Constants;
 import com.util.DriverFactory;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
-//import org.junit.Assert;
 
 public class Steps_FacebookLandingPage {
 
@@ -23,10 +22,7 @@ public class Steps_FacebookLandingPage {
 
     @Then("verify Facebook landing page is navigated")
     public void verifyFacebookLandingPageIsNavigated() {
-        //Check page URL
         Assert.assertTrue(page.pageURLIsEqual(Constants.URL_FACEBOOK_LANDING_PAGE));
-
-        //Check page title
         Assert.assertTrue(page.pageTitleIsEqual(Constants.TITLE_FACEBOOK_LANDING_PAGE));
     }
 
@@ -55,7 +51,10 @@ public class Steps_FacebookLandingPage {
         Assert.assertTrue(page.pageURLIsEqual(Constants.URL_FACEBOOK_LANDING_PAGE));
         Assert.assertTrue(page.pageTitleIsEqual(Constants.TITLE_FACEBOOK_LANDING_PAGE));
         Assert.assertTrue(facebookLandingPage.isSignupFormEnabled());
+    }
 
-
+    @And("user logins Facebook with email {string} and password {string}")
+    public void userLoginsFacebookWithEmailAndPassword(String email, String password) {
+        facebookLandingPage.loginFacebook(email, password);
     }
 }
