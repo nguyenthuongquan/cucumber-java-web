@@ -1,6 +1,7 @@
 package features;
 
 import com.util.ConfigReader;
+import com.util.Constants;
 import com.util.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -18,9 +19,9 @@ import java.util.Properties;
 public class AppHooks {
 
     Properties prop;
+    private ConfigReader configReader;
     private DriverFactory driverFactory;
     private WebDriver driver;
-    private ConfigReader configReader;
 
     @Before(value = "@skip", order = 0)
     public void skipScenario(Scenario scenario) {
@@ -32,7 +33,7 @@ public class AppHooks {
     public void launchBrowser() {
         //1. getProperty
         configReader = new ConfigReader();
-        prop = configReader.init_prop();
+        prop = configReader.init_prop(Constants.PATH_ENVIRONMENT_PROPERTIES);
 
         //2. launchBrowser
         String browserName = prop.getProperty("Browser");
@@ -42,23 +43,32 @@ public class AppHooks {
 
     @AfterStep
     public void takeScreenShot(Scenario scenario) {
-        String date = new SimpleDateFormat("yyMMdd-HHmmss-SS").format(new Date());
-        byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-        scenario.attach(sourcePath, "image/png", date);
-    }
+        //1. getProperty
+        configReader = new ConfigReader();
+        prop = configReader.init_prop(Constants.PATH_CONFIG_PROPERTIES);
 
+        //2. takeScreenShotIfAllowed
+        if (prop.getProperty("takeScreenshotForEveryStep").equalsIgnoreCase("true")) {
+            String date = new SimpleDateFormat("yyMMdd-HHmmss-SS").format(new Date());
+            byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(sourcePath, "image/png", date);
+        }
+    }
 
     @After(order = 1)
     public void tearDown(Scenario scenario) {
-        //1. tearDown
-        if (scenario.isFailed()) {
+        //1. tearDown, takeScreenShotIfAllowed
+        configReader = new ConfigReader();
+        prop = configReader.init_prop(Constants.PATH_CONFIG_PROPERTIES);
+        if (scenario.isFailed() &&
+                (prop.getProperty("takeScreenshotWhenScenarioFails").equalsIgnoreCase("true")) ) {
+
             String screenshotName = scenario.getName()
                     .replace(" ", "_")
                     .replace("\'", "");
             byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(sourcePath, "image/png", screenshotName);
         }
-
         //2. quitBrowser
         driver.quit();
     }

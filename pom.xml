@@ -216,6 +216,12 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
+                    <properties>
+                        <property>
+                            <name>dataproviderthreadcount</name>
+                            <value>10</value> <!-- Only work when running with cmd: mvn verify -->
+                        </property>
+                    </properties>
                     <includes>
                         <include>**/TestRunner.java</include>
 <!--                        <include>**/TestRunnerFailed.java</include>-->

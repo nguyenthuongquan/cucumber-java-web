@@ -10,7 +10,6 @@ public class Constants {
     public static final String URL_CONTACTUS_PAGE = "http://automationpractice.com/index.php?controller=contact";
     public static final String URL_HOME_PAGE = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
     public static final String URL_VNEXPRESS_HOME_PAGE = "https://vnexpress.net/";
-
     public static final String URL_VNEXPRESS_INTERNATIONAL_PAGE = "https://e.vnexpress.net/";
 
 
@@ -28,6 +27,10 @@ public class Constants {
 
     public static final String URL_FACEBOOK_CREATE_PAGE_PAGE = "https://www.facebook.com/pages/create/?ref_type=registration_form";
     public static final String TITLE_FACEBOOK_CREATE_PAGE_PAGE = "Facebook";
+
+    public static final String PATH_CONFIG_PROPERTIES = "./src/test/resources/config/config.properties";
+    public static final String PATH_ENVIRONMENT_PROPERTIES = "./src/test/resources/environment.properties";
+
 
 
 

@@ -3,10 +3,12 @@ package com.util;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
@@ -18,10 +20,29 @@ public class DriverFactory {
     }
 
     public WebDriver init_driver(String browser) {
-        System.out.println("Browser value is: " + browser);
+        ConfigReader configReader = new ConfigReader();
+        Properties prop = configReader.init_prop(Constants.PATH_CONFIG_PROPERTIES);
+        boolean isBrowserHeadless = Boolean.parseBoolean(prop.getProperty("headless"));
+        System.out.println("Browser Info: " + browser + ", headless = " + isBrowserHeadless);
+
         if (browser.equalsIgnoreCase("Chrome")) {
             WebDriverManager.chromedriver().setup();
-            tlDriver.set(new ChromeDriver());
+            if (isBrowserHeadless) {
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments(
+                        "--headless",
+                        "--disable-gpu",
+                        "--window-size=1920,1200",
+                        "--ignore-certificate-errors",
+                        "--disable-extensions",
+                        "--no-sandbox",
+//                        "--incognito",
+                        "--disable-dev-shm-usage");
+
+                tlDriver.set(new ChromeDriver(options));
+            } else
+                tlDriver.set(new ChromeDriver());
+
         } else if (browser.equalsIgnoreCase("Firefox")) {
             WebDriverManager.firefoxdriver().setup();
             tlDriver.set(new FirefoxDriver());

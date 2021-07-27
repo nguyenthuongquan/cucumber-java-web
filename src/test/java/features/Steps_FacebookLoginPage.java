@@ -5,9 +5,11 @@ import com.pages.Page;
 import com.util.Constants;
 import com.util.DriverFactory;
 import com.util.ElementUtil;
+import io.cucumber.java.an.E;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 
 public class Steps_FacebookLoginPage {
 
@@ -27,7 +29,11 @@ public class Steps_FacebookLoginPage {
 
     @Then("verify error {string} return in Facebook login page")
     public void verifyErrorReturnInFacebookLoginPage(String errorText) {
-        By error = By.xpath("//*[contains(text(),'" + errorText + "')]");
-        Assert.assertTrue(ElementUtil.isElementIsDisplayed(error));
+        Assert.assertTrue(facebookLoginPage.isLoginValidationErrorsReturned(errorText));
+
+
+
+
+
     }
 }

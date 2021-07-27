@@ -2,7 +2,9 @@ package com.pages;
 
 import com.util.ElementUtil;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class FacebookLoginPage {
 
@@ -51,5 +53,24 @@ public class FacebookLoginPage {
         boolean a = ElementUtil.isElementIsDisplayed(err_emailOrPhoneDoNotMatch);
         boolean b = ElementUtil.isElementIsDisplayed(lnk_findYourAccountAndLogin);
         return a && b;
+    }
+
+    public boolean isLoginValidationErrorsReturned(String errorText) {
+        By lbl_error = By.xpath("//*[contains(text(),'" + errorText + "')]");
+        try {
+            return ElementUtil.isElementIsDisplayed(lbl_error);
+        }
+        catch (NoSuchElementException e) {
+            errorText = "Sai thông tin đăng nhập";
+            lbl_error = By.xpath("//*[contains(text(),'" + errorText + "')]");
+            try {
+                return ElementUtil.isElementIsDisplayed(lbl_error);
+            }
+            catch (NoSuchElementException e1) {
+                errorText = "Bạn hiện không thể sử dụng tính năng này";
+                lbl_error = By.xpath("//*[contains(text(),'" + errorText + "')]");
+            }
+        }
+        return ElementUtil.isElementIsDisplayed(lbl_error);
     }
 }
