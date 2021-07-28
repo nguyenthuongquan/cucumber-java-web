@@ -43,7 +43,7 @@ public class Steps_ContactUsPage {
         contactUsPage.clickSend();
     }
 
-    @Then("it shows a successful message {string}")
+    @Then("verify successful message {string} is shown")
     public void it_shows_a_successful_message(String expectedMessage) {
         String actualMessage = contactUsPage.getSuccessMessage();
         Assert.assertEquals(actualMessage, expectedMessage);

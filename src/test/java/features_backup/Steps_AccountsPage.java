@@ -34,8 +34,8 @@ public class Steps_AccountsPage {
         accountsPage = loginPage.doLogin(username, password);
     }
 
-    @Then("user gets accounts section")
-    public void user_gets_accounts_section(DataTable sectionsTable) {
+    @Then("verify accounts section includes")
+    public void verifyAccountsSectionIncludes(DataTable sectionsTable) {
         List<String> expectAccountSectionList = sectionsTable.asList();
         System.out.println("Expected accounts section list: " + expectAccountSectionList);
         List<String> actualAccountSectionList = accountsPage.getAccountSectionsList();
@@ -43,8 +43,8 @@ public class Steps_AccountsPage {
         Assert.assertTrue(expectAccountSectionList.containsAll(actualAccountSectionList));
     }
 
-    @Then("accounts section count should be {int}")
-    public void accounts_section_count_should_be(Integer expectedSectionCount) {
+    @Then("verify accounts section count should be {int}")
+    public void verifyAccountsSectionCountShouldBe(Integer expectedSectionCount) {
         Assert.assertEquals(accountsPage.getAccountSectionCount(), (int) expectedSectionCount);
     }
 }

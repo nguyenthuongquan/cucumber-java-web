@@ -1,10 +1,11 @@
-Feature: F02 - Facebook Login page feature
+@FB-LoginPage
+Feature: F18 - Facebook Login page feature
 
   Background:
     Given user navigates to Facebook landing page
 
-  @TC02-001
-  Scenario Outline: TC02-001 FB Login page - verify login with incorrect credentials
+  @TC18-001
+  Scenario Outline: TC18-001 FB Login page - verify login with incorrect credentials
     When user logins Facebook with email "<email>" and password "<password>"
     Then verify error "<error>" return in Facebook login page
     Examples:
@@ -25,8 +26,8 @@ Feature: F02 - Facebook Login page feature
       | <script>alert(\"testing\")</script> | 123456   | Email hoặc số di động bạn nhập không kết nối với tài khoản nào|
 
 
-  @TC02-002
-  Scenario Outline: TC02-002 FB Login page - verify login with correct credentials
+  @TC18-002
+  Scenario Outline: TC18-002 FB Login page - verify login with correct credentials
     When user logins Facebook with email "<email>" and password "<password>"
     Then verify Facebook home page is navigated
     And verify left navigation bar appears for user "Quan Book" in Facebook home page

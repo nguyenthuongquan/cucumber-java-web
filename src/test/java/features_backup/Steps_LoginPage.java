@@ -14,12 +14,12 @@ public class Steps_LoginPage {
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
     private Page page = new Page(DriverFactory.getDriver());
 
-    @Given("user is on Login page")
+    @Given("user navigates to Login page")
     public void user_is_on_login_page() {
         page.navigateTo(Constants.URL_LOGIN_PAGE);
     }
 
-    @Then("forgot password link should be displayed")
+    @Then("verify forgot password link should be displayed")
     public void forgot_password_link_should_be_displayed() {
         Assert.assertTrue(loginPage.isForgotPwLinkExist());
     }

@@ -3,6 +3,7 @@ package features;
 import com.util.ConfigReader;
 import com.util.Constants;
 import com.util.DriverFactory;
+import io.cucumber.core.gherkin.Step;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -42,7 +43,7 @@ public class AppHooks {
     }
 
     @AfterStep
-    public void takeScreenShot(Scenario scenario) {
+    public void takeScreenShotIfAllowed(Scenario scenario) {
         //1. getProperty
         configReader = new ConfigReader();
         prop = configReader.init_prop(Constants.PATH_CONFIG_PROPERTIES);

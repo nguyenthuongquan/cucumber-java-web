@@ -1,3 +1,4 @@
+@FB-LandingPage
 Feature: F01 - Facebook Landing page feature
 
   Background:

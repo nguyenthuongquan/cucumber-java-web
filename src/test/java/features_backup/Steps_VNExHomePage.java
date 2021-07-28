@@ -14,13 +14,13 @@ public class Steps_VNExHomePage {
     private VNExHomePage vnExHomePage = new VNExHomePage(DriverFactory.getDriver());
     private Page page = new Page(DriverFactory.getDriver());
 
-    @Given("user is on VnExpress home page")
+    @Given("user navigates to VnExpress home page")
     public void user_is_on_vn_express_home_page() {
         page.navigateTo(Constants.URL_VNEXPRESS_HOME_PAGE);
     }
 
 
-    @Then("Dang Nhap link should be displayed")
+    @Then("verify Dang Nhap link should be displayed")
     public void dang_nhap_link_should_be_displayed() {
         Assert.assertTrue(vnExHomePage.isDangNhapBtnExist());
     }
@@ -55,7 +55,7 @@ public class Steps_VNExHomePage {
         vnExHomePage.clickOnLogin();
     }
 
-    @Then("{string} text should be displayed in user profile button")
+    @Then("verify {string} text should be displayed in user profile button")
     public void text_should_be_displayed_in_user_profile_button(String username) {
         vnExHomePage.waitUntilButtonUserNameAppears();
         Assert.assertEquals(vnExHomePage.getUserNameBtnText(), username);

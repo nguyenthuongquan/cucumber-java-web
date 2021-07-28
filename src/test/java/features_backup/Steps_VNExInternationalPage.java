@@ -24,7 +24,7 @@ public class Steps_VNExInternationalPage {
     }
 
 
-    @Then("user gets VnExpress headers")
+    @Then("verify VnExpress International headers include")
     public void user_gets_vn_express_headers(DataTable headersTable) {
         List<String> expectHeaderNamesList = headersTable.asList(String.class);
         System.out.println("Expected header names list: " + expectHeaderNamesList);
@@ -33,7 +33,7 @@ public class Steps_VNExInternationalPage {
         Assert.assertTrue(expectHeaderNamesList.containsAll(actualHeaderNamesList));
     }
 
-    @Then("VnExpress International headers count should be {int}")
+    @Then("verify VnExpress International headers count should be {int}")
     public void vn_express_international_headers_count_should_be(Integer expectedHeaderCount) {
         Assert.assertEquals(vnExInternationalPage.getHeadersCount(), (int) expectedHeaderCount);
     }

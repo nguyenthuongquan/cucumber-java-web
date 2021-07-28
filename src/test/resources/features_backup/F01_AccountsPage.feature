@@ -8,18 +8,15 @@ Feature: F01 - Account page feature
 
   @TC01-001
   Scenario: TC01-001 Accounts page title
-    Given user is on Accounts page
-    When user gets the title of the page
-    Then page title should be "My account - My Store"
+    Then verify the current page title is "My account - My Store"
 
   @TC01-002
   Scenario: TC01-002 Accounts section count
-    Given user is on Accounts page
-    Then user gets accounts section
+    Then verify accounts section includes
       | ORDER HISTORY AND DETAILS |
       | MY CREDIT SLIPS           |
       | MY ADDRESSES              |
       | MY PERSONAL INFORMATION   |
       | MY WISHLISTS              |
       | Home                      |
-    And accounts section count should be 6
+    And verify accounts section count should be 6

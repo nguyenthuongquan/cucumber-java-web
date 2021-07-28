@@ -6,8 +6,7 @@ Feature: F02 - Contact Us page feature
     Given user navigates to Contact Us page
     When user fills the form from given sheetname "<SheetName>" and rownumber <RowNumber>
     And user clicks on Send button
-    Then it shows a successful message "Your message has been successfully sent to our team."
-
+    Then verify successful message "Your message has been successfully sent to our team." is shown
     Examples:
       | SheetName | RowNumber |
       | contactus | 0         |
