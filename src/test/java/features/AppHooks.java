@@ -3,7 +3,6 @@ package features;
 import com.util.ConfigReader;
 import com.util.Constants;
 import com.util.DriverFactory;
-import io.cucumber.core.gherkin.Step;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -12,6 +11,13 @@ import org.junit.Assume;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import io.cucumber.plugin.event.PickleStepTestStep;
+import io.cucumber.core.backend.TestCaseState;
+import io.cucumber.plugin.event.TestCase;
+import java.lang.reflect.Field;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,6 +29,7 @@ public class AppHooks {
     private ConfigReader configReader;
     private DriverFactory driverFactory;
     private WebDriver driver;
+    private int currentStepDefIndex = 0;
 
     @Before(value = "@skip", order = 0)
     public void skipScenario(Scenario scenario) {
@@ -32,45 +39,59 @@ public class AppHooks {
 
     @Before(order = 1)
     public void launchBrowser() {
-        //1. getProperty
         configReader = new ConfigReader();
         prop = configReader.init_prop(Constants.PATH_ENVIRONMENT_PROPERTIES);
-
-        //2. launchBrowser
         String browserName = prop.getProperty("Browser");
         driverFactory = new DriverFactory();
         driver = driverFactory.init_driver(browserName);
     }
 
     @AfterStep
-    public void takeScreenShotIfAllowed(Scenario scenario) {
-        //1. getProperty
+    public void takeScreenShot(Scenario scenario) throws NoSuchFieldException, IllegalAccessException {
         configReader = new ConfigReader();
         prop = configReader.init_prop(Constants.PATH_CONFIG_PROPERTIES);
 
-        //2. takeScreenShotIfAllowed
-        if (prop.getProperty("takeScreenshotForEveryStep").equalsIgnoreCase("true")) {
-            String date = new SimpleDateFormat("yyMMdd-HHmmss-SS").format(new Date());
-            byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(sourcePath, "image/png", date);
-        }
+        if (prop.getProperty("takeScreenshotForEveryStep").equalsIgnoreCase("true"))
+            takeAndEmbedScreenshotToScenario(scenario);
+
+        if (prop.getProperty("takeScreenshotForVerificationStep").equalsIgnoreCase("true")
+                && getCurrentStep(scenario).startsWith("verify"))
+            takeAndEmbedScreenshotToScenario(scenario);
+
+        currentStepDefIndex += 1;
     }
 
     @After(order = 1)
     public void tearDown(Scenario scenario) {
-        //1. tearDown, takeScreenShotIfAllowed
+        //1. takeScreenShotIfAllowed
         configReader = new ConfigReader();
         prop = configReader.init_prop(Constants.PATH_CONFIG_PROPERTIES);
         if (scenario.isFailed() &&
-                (prop.getProperty("takeScreenshotWhenScenarioFails").equalsIgnoreCase("true")) ) {
+                (prop.getProperty("takeScreenshotWhenScenarioFails").equalsIgnoreCase("true")) )
+            takeAndEmbedScreenshotToScenario(scenario);
 
-            String screenshotName = scenario.getName()
-                    .replace(" ", "_")
-                    .replace("\'", "");
-            byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(sourcePath, "image/png", screenshotName);
-        }
         //2. quitBrowser
         driver.quit();
     }
+
+    private void takeAndEmbedScreenshotToScenario(Scenario scenario) {
+        String date = new SimpleDateFormat("yyMMdd-HHmmss-SS").format(new Date());
+        byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        scenario.attach(sourcePath, "image/png", date);
+    }
+
+    private String getCurrentStep(Scenario scenario) throws NoSuchFieldException, IllegalAccessException {
+        Field f = scenario.getClass().getDeclaredField("delegate");
+        f.setAccessible(true);
+        TestCaseState sc = (TestCaseState) f.get(scenario);
+        Field f1 = sc.getClass().getDeclaredField("testCase");
+        f1.setAccessible(true);
+        TestCase testCase = (TestCase) f1.get(sc);
+        List<PickleStepTestStep> testSteps = testCase.getTestSteps().stream()
+                .filter(x -> x instanceof PickleStepTestStep)
+                .map(x -> (PickleStepTestStep) x)
+                .collect(Collectors.toList());
+        return testSteps.get(currentStepDefIndex).getStep().getText();
+    }
+
 }
