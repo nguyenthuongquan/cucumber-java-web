@@ -1,4 +1,4 @@
-package features_backup;
+package features;
 
 import com.pages.Page;
 import com.util.DriverFactory;
@@ -41,5 +41,11 @@ public class Steps_Page {
     @And("take a screenshot")
     public void takeAScreenshot() throws IOException {
         page.takeScreenShot();
+    }
+
+    @Then("verify all Urls in the current page are not broken")
+    public void verifyAllUrlsInTheCurrentPageAreNotBroken() {
+        Assert.assertTrue(page.areAllLinksInPageWork());
+
     }
 }
