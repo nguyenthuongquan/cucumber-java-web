@@ -6,7 +6,7 @@ displayScenario: true
 displayDetailed: true
 
 summaryConfig:
-  title: QA Report - Develop
+  title: QA Regresion Report - Develop
   dataBackgroundColor: 4F0CC8
   titleColor: 0000FF
   dateColor: 969696
