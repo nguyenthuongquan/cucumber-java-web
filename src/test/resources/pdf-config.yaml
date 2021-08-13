@@ -1,23 +1,23 @@
-passColor: 05a167
+passColor: 00FF00
 failColor: FF0000
-skipColor: a89132
+skipColor: E6AD0D
 displayFeature: true
 displayScenario: true
 displayDetailed: true
 
 summaryConfig:
-  title: QA Regresion Report - Develop
+  title: QA Regresion - Develop
   dataBackgroundColor: 4F0CC8
-  titleColor: 0000FF
+  titleColor: 000000
   dateColor: 969696
   timeColor: 0000FF
   dial:
     featureRanges: 60 95
     scenarioRanges: 70 90
     stepRanges: 75 85
-    badColor: f768a1
-    averageColor: 93ffff
-    goodColor: 32ecab
+    badColor: FF0000
+    averageColor: E6AD0D
+    goodColor: 00FF00
 
 featureConfig:
   #itemcount: 10
