@@ -3,8 +3,8 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cucumber-java-web-demo-testng</groupId>
-    <artifactId>cucumber-java-web-demo-testng</artifactId>
+    <groupId>cucumber-java-web</groupId>
+    <artifactId>cucumber-java-web</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

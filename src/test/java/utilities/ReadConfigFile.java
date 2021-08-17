@@ -22,9 +22,6 @@ public interface ReadConfigFile extends Config {
     @Config.Key("takeScreenshotWhenScenarioFails")
     Boolean isScreenshotTakenWhenScenarioFails();
 
-    @Config.Key("browserHeadless")
-    Boolean isBrowserHeadless();
-
     /*** File cucumber.properties */
     @Config.Key("cucumber.publish.enabled")
     Boolean isCucumberPublishEnabled();
@@ -32,6 +29,9 @@ public interface ReadConfigFile extends Config {
     /*** File environment.properties */
     @Config.Key("Browser")
     String browser();
+
+    @Config.Key("Headless")
+    Boolean isBrowserHeadless();
 
     @Config.Key("Environment")
     String environment();
